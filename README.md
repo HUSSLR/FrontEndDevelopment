@@ -43,8 +43,8 @@ Homepage
 <img src="images/page_1.png" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-Whey Proteine page 
 <img src="images/page_2.png" width="375px" alt="omschrijving van de pagina">
+Whey Proteine page 
  
 </details>
 
@@ -58,10 +58,12 @@ Whey Proteine page
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/breakdown_1.png" width="375px" alt="breakdown van de hele pagina">
+
+<img src="images/breakdown2.png" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/dynamisch_deel.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
 ### wellicht nog een dynamisch deel (bijv filter): 
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
@@ -78,24 +80,14 @@ Whey Proteine page
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+Ik heb alleen nog maar mijn HTML geschreven en die is goed volgens Robert.
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
+- Heading's kloppen nog niet
+- Robert gaat me de maandag erna helpen met mijn code
 - nog een punt
 - ...
 
@@ -234,7 +226,8 @@ hier screenshot(s) van je eindresultaat
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
 1. https://www.bulk.com/nl/
-2. bron 2
-3. ...
+2. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+3. https://codepen.io/shooft/pen/eYRdEPm
+4. https://codepen.io/shooft/pen/abwLwRO
 
 </details>

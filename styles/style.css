@@ -94,6 +94,35 @@ h1{
   margin-bottom: 0%;
 }
 
+h2{
+  font-family: 'BulkSans_Bold';
+  margin-bottom: 0;
+  margin-top: 4%;
+  width: 85%;
+  margin-left: 10%;
+  font-size: 1.8em;
+}
+
+h3{
+  font-family: 'BulkSans_Bold';
+  margin-bottom: 0;
+  margin-top: 8%;
+  width: 85%;
+  margin-left: 10%;
+  font-size: 1.8em;
+}
+
+
+p{
+  color: grey;
+  font-family: 'BulkSans_Light';
+  margin-top: 2em;
+  margin-bottom: 3em;
+  width: 80%;
+  margin-left: 10%;
+  font-size: .8em;
+}
+
 .zwarte_korting_banner{
   background-color: black;
   width: 100%;
@@ -107,9 +136,7 @@ h1{
   height: auto;
 }
 
-
-
-.alle_zwarte_buttons{
+.button_op_zwarte_korting_banner{
   font-family: 'BulkSans_Bold';
   padding: 1.1em;
   margin-bottom: 10%;
@@ -121,52 +148,124 @@ h1{
   background-color: white;
 }
 
+.alle_rode_buttons{
+  font-family: 'BulkSans_Bold';
+  margin-bottom: 0%;
+  margin-left: 3em;
+  margin-top: 8%;
+  width: 20%;
+  color: #ffffff;
+  border-radius: 3em;
+  border: none;
+  text-align: center;  
+  background-color: red;
+}
+
 
 .alle_witte_buttons{
   font-family: 'BulkSans_Bold';
-  padding: 1.1em;
-  margin-bottom: 10%;
-  width: 40%;
+  padding: 0.6em;
+  margin-bottom: 1.5em;
+  margin-left: 3em;
+  width: 33%;
   color: black;
-  border: solid black;
+  border: solid 0.15em black;
   border-radius: 3em;
   text-align: center;  
   background-color: white;
-  margin-left: 1em;
+}
+
+/* SPECIFIEKE STYLING */
+/* potjes */
+
+.potjes_image_met_banner{
+  position: relative;
+  margin-top: 2em;
 }
 
 .potjes{
+  position: absolute;
+  z-index: 1;
+  width: 80%;
+  margin: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner_achter_potjes_img{
   width: 100%;
+}
+
+/* siroop */
+.siroop_met_banner{
+  position: relative;
   margin-top: 2em;
 }
 
 .siroopflessen{
+  position: absolute;
+  z-index: 1;
+  width: 80%;
+  margin: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner_achter_siroop_img{
   width: 100%;
-  margin-top: 2em;
 }
 
-.gist_capsules_capsules{
-  display: flex;
-  flex-direction: row;
-  list-style: none;
+
+/* nieuwe producten grid block */
+.grid_voor_blok_tekst_en_images{
+  margin-top: 3em;
+  margin-left: 1.2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5em;
 }
 
+.gist_img{
+  width: 90%;
+}
+
+.huid_capsules_img{
+  width: 90%;
+}
+
+.hart_capsules_img{
+  width: 90%;
+}
+
+
+/* ourplanet */
 .ourplanet_banner{
   width: 100%;
   margin-top: 2em;
 }
 
-
-.sportmensen_afbeelding_naastelkaar{
+/* ourplanet */
+.ThisisNutrition_tekst{
   display: flex;
-  flex-direction: row;
-  list-style-type: none;
+  justify-content: center;
+  text-align: center;
 }
 
-.drie_images img:first-of-type{
+.drie_images{
+display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-gap:1em;
   width: 100%;
-  margin-top: 2em;
 }
+
+.drie_images:first-child {
+  grid-column-start:1;
+  grid-column-end:-1;
+}
+
+
 
 
 /* FOOTER */

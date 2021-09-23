@@ -40,11 +40,11 @@ https://www.bulk.com/nl/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Homepage  
-<img src="image/page_1" width="375px" alt="omschrijving van de pagina">
+<img src="images/page_1" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Whey Proteine page 
-<img src="image/page_2" width="375px" alt="omschrijving van de pagina">
+<img src="images/page_2" width="375px" alt="omschrijving van de pagina">
  
 </details>
 

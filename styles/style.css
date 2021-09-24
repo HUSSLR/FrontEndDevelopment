@@ -265,7 +265,19 @@ p{
   grid-column-end:-1;
 }
 
-
+.inschrijven_button_contact_form{
+  font-family: 'BulkSans_Bold';
+  padding: 0.6em;
+  margin-bottom: 1.5em;
+  margin-top: 2em;
+  margin-left: 3em;
+  width: 33%;
+  color: white;
+  border: none;
+  border-radius: 3em;
+  text-align: center;  
+  background-color: black;
+}
 
 /* FOOTER */
 

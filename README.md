@@ -229,5 +229,7 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 2. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 3. https://codepen.io/shooft/pen/eYRdEPm
 4. https://codepen.io/shooft/pen/abwLwRO
+5. https://www.flaticon.com (alle icons binnen mijn footer)
+6. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr (voor lijntje tussen main en footer)
 
 </details>

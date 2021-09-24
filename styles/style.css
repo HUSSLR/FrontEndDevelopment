@@ -48,6 +48,7 @@ body{
 /* HEADER */
 nav{
   display: flex;
+  margin-top: .5em;
   padding: .5em;
   width: 100%;
   align-items: flex-end;
@@ -254,18 +255,35 @@ p{
 }
 
 .drie_images{
-display:grid;
-  grid-template-columns:1fr 1fr;
-  grid-gap:1em;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
 }
 
-.drie_images:first-child {
+.drie_images:first-child{
   grid-column-start:1;
   grid-column-end:-1;
 }
 
 
 
-
 /* FOOTER */
+
+.solid_lijn_boven_social_media_buttons{
+  width: 100%;
+  color: lightgrey;
+  margin-bottom: 2em;
+}
+
+.socialmedia_buttons_footer{
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  margin-left: 1em;
+}
+
+.styling_voor_elke_socialmedia_icoon{
+  width: 20%;
+}
+
+

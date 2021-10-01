@@ -3,6 +3,42 @@
   box-sizing:border-box;  
 }
 
+:root{
+  --background-color: white;
+  --background-color-slider: white;
+  --background-color-winkelmand-hamburger: white;
+  --background-color-contact-tile: rgb(252, 248, 248); 
+  --h1-color: white;
+  --heading-color: black;
+  --header-color: white;
+  --p-color: black;
+  --form-color: #fafafa;
+  --text-color-zwart: black;
+  --text-color-wit: white;
+  --text-color-grijs: grey;
+  --text-color-zwart-slider: black;
+  --a-color-wit: white;
+  --a-color-zwart: black;
+  --a-color-rood: red;
+  --color-underline-grijs: grey;
+  --color-lichtgrijs: lightgrey;
+}
+
+@media (prefers-color-scheme:dark){
+  :root{
+  --background-color: black;
+  --background-color-contact-tile: rgb(49, 45, 45); 
+  --heading-color: white;
+  --p-color: white;
+  --text-color-zwart: white;
+  --text-color-wit: black;
+  --text-color-grijs: white;
+  --color-underline-grijs: white;
+  --color-lichtgrijs: white;
+}
+}
+
+
 @font-face {
   font-family: 'BulkSans_Black';
   src: url('../fonts/BulkSans-Black.woff2');
@@ -43,89 +79,259 @@
 body{
   padding: 0%;
   margin: 0%;
+  background-color:var(--background-color)
 }
 
+/***********/
 /* HEADER */
+/*********/
+header{
+  background-color: var(--header-color);
+  padding-bottom: 1em;
+}
+
+/* Navigation */
 nav{
-  display: flex;
-  margin-top: .5em;
-  padding: .5em;
+  background-color: var(--header-color);
   width: 100%;
+  display: flex;  
+  margin-top: 0;
+  margin-bottom: 0.8em;
+  padding: .5em;
   align-items: flex-end;
   justify-content: space-between;
+  z-index: 11;
 }
 
-.logo{
-  width: 5.4em;
-  height: 100%;
-}
-
-.hamburger_menu{
-  width: 1.2em;
-  height: 100%;
-  margin-top: 0%;
-}
-
+/* Winkelmandje en uitschuifmenu */
 .winkelmandje{
   width: 1.1em;
   height: 100%;
 }
 
-
-
-
-/* MAIN */
-
-.tijdelijke_animatie_bovenaan{
+.winkelmand{
+	background-color: var(--background-color-winkelmand-hamburger);
   width: 100%;
+  height: 100%;
+  margin-top: 0;
+	position: absolute;
+	left:0;
+	right:0;
+  top:0;
+  list-style-type: none;
+  transform: translateX(112%);
+  transition:.5s;
+  z-index: 10;
 }
 
-/* Teksten */
-.form{
+.close_winkelmandje{   
+  appearance: none;
+  margin: 0;
+  margin-top: 4em;
+  width: 5%;
+  align-items: flex-end;
+}
+
+.winkelmand.mandjeOpenen{
+  transform:translateX(10%);
+}
+
+/* Bulk logo in Nav */
+.logo{
+  width: 5.4em;
+  height: 100%;
+}
+
+/* Hamburger menu en uitschuifmenu */
+.hamburger_menu{
+  width: 1.2em;
+  height: 100%;
+  margin-top: 0%;
+}
+.menu{
+  background-color: var(--background-color-winkelmand-hamburger);
+  width: 90%;
+  height: 100%;
+  margin-top: 0;
+	position: absolute;
+	left:0;
+	right:0;
+  top:0;
+  list-style-type: none;
+  transform: translateX(-101%);
+  transition:.5s;
+  z-index: 10;
+}
+
+.close{   
+  appearance: none;
+  margin: 0;
+  width: 5%;
+  align-items: flex-end;
+}
+
+.menu.Uitgeklapt {
+  transform:translateX(0%);
+}
+
+
+
+/* Search form */
+.search_form form{
+  background-image: url(.images/search.png);
+  background-repeat: no-repeat;
+  padding-left: 3em;
+  background-size: 1.25em auto;
+  width: 95%;
+  height: 2em;
+  margin-left: 0.8em;
+  background-color: var(--form-color);
+  border: none;
+  border-radius: 23px;
   display: flex;
-  justify-content: center;
-  border-radius: 2em;
-  margin-top: 1em;
-  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  transition: .3s;
 }
 
+.search_form input{
+  border-style: none;
+  background-color: var(--form-color);
+  font-family: 'BulkSans_Medium';
+  margin-left: 1em;
+}
+
+/* Slider onder de search form */
+.slider_onder_searchform{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	animation-name: slideshow;
+	animation-duration:10s;
+	animation-iteration-count: infinite;
+  width: 100%;
+  background-color: var(--background-color-slider);
+}
+
+.slider_onder_searchform article{
+	min-width: calc(100%);
+	background: var(--background-color-slider);
+	color: var(--text-color-zwart);
+  padding: 1em;
+}
+
+.slider_onder_searchform article:first-of-type{
+  background-color: var(--background-color-slider);
+  color: var(--text-color-zwart-slider);
+}
+
+.slider_onder_searchform article:nth-of-type(2) {
+  background-color: var(--background-color-slider);
+  color: var(--text-color-zwart-slider);
+}
+
+.slider_onder_searchform article:nth-of-type(3) {
+  background-color: var(--background-color-slider);
+  color: var(--text-color-zwart-slider);
+}
+
+@keyframes slideshow {
+	0% {
+		transform: translateX(0);
+	}
+	33% {
+		transform: translateX(-100%);
+	}
+	66% {
+		transform: translateX(-200%);
+	}
+}
+
+
+
+/*********/
+/* MAIN */
+/*******/
+
+/* Algemene styling van tekstelementen */
 h1{
   font-size: 4em;
   font-family: 'BulkSans_Black';
   margin-bottom: 0%;
+  color: var(--h1-color);
 }
 
 h2{
   font-family: 'BulkSans_Bold';
-  margin-bottom: 0;
-  margin-top: 4%;
-  width: 85%;
-  margin-left: 10%;
   font-size: 1.8em;
+  width: 85%;
+  margin-bottom: 0;
+  margin-top: 0.2em;
+  margin-left: 10%;
+  color: var(--heading-color);
 }
 
 h3{
   font-family: 'BulkSans_Bold';
-  margin-bottom: 0;
-  margin-top: 8%;
-  width: 85%;
-  margin-left: 10%;
   font-size: 1.8em;
+  width: 85%;
+  margin-bottom: 0;
+  margin-top: 0.2em;
+  margin-left: 10%;
+  color: var(--heading-color);
 }
-
 
 p{
-  color: grey;
   font-family: 'BulkSans_Light';
+  font-size: .8em;
+  color: var(--text-color-zwart);
+  width: 80%;
   margin-top: 2em;
   margin-bottom: 3em;
-  width: 80%;
   margin-left: 10%;
-  font-size: .8em;
 }
 
+figcaption{
+  font-family: 'BulkSans_Bold';
+  font-size: .9em;
+  color: var(--text-color-zwart);
+  text-align: center;  
+  margin-top: 1em;
+}
+
+
+/* Algemene styling van buttons */
+.alle_rode_buttons{
+  font-family: 'BulkSans_Bold';
+  margin-bottom: 0%;
+  margin-left: 3em;
+  margin-top: 8%;
+  width: 20%;
+  color: var(--a-color-wit);
+  border-radius: 3em;
+  border: none;
+  text-align: center;  
+  background-color: var(--a-color-rood);
+}
+
+.alle_witte_buttons{
+  font-family: 'BulkSans_Bold';
+  padding: 0.6em;
+  margin-bottom: 1.5em;
+  margin-left: 3em;
+  width: 33%;
+  color: var(--a-color-zwart);
+  border-radius: 3em;
+  text-align: center;  
+  border: none;
+  background-color: var(--a-color-wit);
+}
+
+
+/* Vanaf hier specifieke styling op basis van boven naar beneden */
+/* Zwarte korting banner met 'shop nu' button */
 .zwarte_korting_banner{
-  background-color: black;
+  background-color: var(--background-color);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -137,10 +343,29 @@ p{
   height: auto;
 }
 
-.button_op_zwarte_korting_banner{
+.zwarte_korting_banner p:nth-of-type(1){
+  font-family: 'BulkSans_Medium';
+  font-size: 2em;
+  color: white;
+  margin: 0;
+  align-items: center;  
+  text-align: center;
+  margin-bottom: .5em;
+}
+
+.zwarte_korting_banner p:nth-of-type(2){
+  color: white;
+  font-size: 1em;
+  margin: 0;
+  align-items: center;  
+  text-align: center;
+}
+
+.zwarte_korting_banner button{
   font-family: 'BulkSans_Bold';
   padding: 1.1em;
-  margin-bottom: 10%;
+  margin-top: 2em;
+  margin-bottom: 2em;
   width: 40%;
   color: #000000;
   border-radius: 3em;
@@ -149,42 +374,18 @@ p{
   background-color: white;
 }
 
-.alle_rode_buttons{
-  font-family: 'BulkSans_Bold';
-  margin-bottom: 0%;
-  margin-left: 3em;
-  margin-top: 8%;
-  width: 20%;
-  color: #ffffff;
-  border-radius: 3em;
-  border: none;
-  text-align: center;  
-  background-color: red;
+.zwarte_korting_banner button:focus{
+  color: aqua;
 }
 
 
-.alle_witte_buttons{
-  font-family: 'BulkSans_Bold';
-  padding: 0.6em;
-  margin-bottom: 1.5em;
-  margin-left: 3em;
-  width: 33%;
-  color: black;
-  border: solid 0.15em black;
-  border-radius: 3em;
-  text-align: center;  
-  background-color: white;
-}
-
-/* SPECIFIEKE STYLING */
-/* potjes */
-
+/* Blauwe banner met plaatje van potjes erop */
 .potjes_image_met_banner{
   position: relative;
   margin-top: 2em;
 }
 
-.potjes{
+.potjes_image_met_banner img:first-of-type{
   position: absolute;
   z-index: 1;
   width: 80%;
@@ -194,17 +395,18 @@ p{
   transform: translate(-50%, -50%);
 }
 
-.banner_achter_potjes_img{
+.potjes_image_met_banner img:last-of-type{
   width: 100%;
 }
 
-/* siroop */
-.siroop_met_banner{
+
+/* Oranje banner met siroop img erop */
+.banner_met_siroop_img{
   position: relative;
   margin-top: 2em;
 }
 
-.siroopflessen{
+.banner_met_siroop_img img:first-of-type{
   position: absolute;
   z-index: 1;
   width: 80%;
@@ -214,61 +416,101 @@ p{
   transform: translate(-50%, -50%);
 }
 
-.banner_achter_siroop_img{
+.banner_met_siroop_img img:last-of-type{
   width: 100%;
 }
 
 
-/* nieuwe producten grid block */
-.grid_voor_blok_tekst_en_images{
+/* Nieuwe producten grid block */
+.grid_blok_voor_nieuwe_producten_tekst_en_images{
   margin-top: 3em;
   margin-left: 1.2em;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1.5em;
+  color: var(--text-color-zwart);
 }
 
-.gist_img{
+.grid_blok_voor_nieuwe_producten_tekst_en_images img{
   width: 90%;
 }
 
-.huid_capsules_img{
-  width: 90%;
+/* > Specifieke styling voor prijs onder de figcaption */
+.centreer_prijs_onderproductnaam{
+  font-family: 'BulkSans_SemiBold';
+  font-size: .9em;
+  color: var(--text-color-grijs);
+  text-align: center;  
+  margin-top: 0.5em;
 }
 
-.hart_capsules_img{
-  width: 90%;
-}
 
-
-/* ourplanet */
-.ourplanet_banner{
+/* Bulk | ourplanet banner */
+.ourplanet_banner img:first-of-type{
   width: 100%;
   margin-top: 2em;
 }
 
-/* ourplanet */
-.ThisisNutrition_tekst{
+/* #thisisnutrition tekst */
+.ThisisNutrition_tekst h2{
   display: flex;
   justify-content: center;
   text-align: center;
+  margin-top: 1em;
 }
 
-.drie_images{
+.ThisisNutrition_tekst p{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+
+/* Drie images (bulk-logo, man en vrouw) in grid block */
+.drie_images_bulk_vrouw_en_man{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
 }
 
-.drie_images:first-child{
-  grid-column-start:1;
-  grid-column-end:-1;
+.drie_images_bulk_vrouw_en_man img:first-of-type{
+  grid-column-start: 3;
+  grid-column-end: 1;
+  width: 100%;
 }
 
-.inschrijven_button_contact_form{
+.drie_images_bulk_vrouw_en_man img:nth-of-type(2){
+  grid-column-start: -2;
+  grid-column-end: -3;
+  width: 100%;
+}
+
+.drie_images_bulk_vrouw_en_man img:nth-of-type(3){
+  grid-column-start: -2;
+  grid-column-end: -2;
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+
+/* Contact form en button */
+.blijf_in_contact{
+  padding-top: 0.1em;
+  padding-bottom: 0.2em;
+  background-color: var(--background-color-contact-tile);
+}
+
+.blijf_in_contact h2{
+  margin-top: 2em;
+  margin-left: 1em;
+  text-align: center;
+}
+
+.blijf_in_contact button{
   font-family: 'BulkSans_Bold';
   padding: 0.6em;
-  margin-bottom: 1.5em;
+  margin-bottom: 4em;
   margin-top: 2em;
   margin-left: 3em;
   width: 33%;
@@ -279,14 +521,19 @@ p{
   background-color: black;
 }
 
-/* FOOTER */
 
-.solid_lijn_boven_social_media_buttons{
+
+/***********/
+/* FOOTER */
+/*********/
+/* Lijntje tussen main en footer */
+hr{
   width: 100%;
-  color: lightgrey;
+  color: var(--color-lichtgrijs);
   margin-bottom: 2em;
 }
 
+/* Social media buttons */
 .socialmedia_buttons_footer{
   display: flex;
   flex-flow: row;
@@ -294,8 +541,23 @@ p{
   margin-left: 1em;
 }
 
-.styling_voor_elke_socialmedia_icoon{
+.socialmedia_buttons_footer img{
   width: 20%;
 }
 
+.external_links a{
+  text-decoration: underline var(--color-underline-grijs);
+}
 
+/* Grijs copyright balkje onderaan */
+.copyright_balkje_onderin_footer{
+  background-color: var(--color-underline-grijs);
+  width: 100%;
+  padding: .2em;
+}
+
+.copyright_balkje_onderin_footer :first-of-type{
+  color: black;
+  text-decoration: none;
+  margin: .5em;
+}

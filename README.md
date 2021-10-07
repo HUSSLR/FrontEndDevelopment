@@ -13,7 +13,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Jij
 
 <details open>
-<summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Auteur:
 Olaf Husslage
@@ -33,7 +32,6 @@ Surface plane
 ## Je website
 
 <details open>
-<summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
 https://www.bulk.com/nl/
@@ -41,10 +39,12 @@ https://www.bulk.com/nl/
 #### Screenshot(s) van de eerste pagina (small screen): 
 Homepage  
 <img src="images/page_1.png" width="375px" alt="omschrijving van de pagina">
+Ik heb besloten een aantal dubbele sections te skippen, omdat dit simpelweg een herhaling van code is. Dat leek me een beetje saai. Ook skip ik het truspilot en betaalmethodes stukje. Ik vind dit praktische zaken die niet heel leuk zijn om te maken.
 
 #### Screenshot(s) van de tweede pagina (small screen):
-<img src="images/page_2.png" width="375px" alt="omschrijving van de pagina">
 Whey Proteine page 
+<img src="images/page_2.png" width="375px" alt="omschrijving van de pagina">
+Ik heb besloten een aantal producten van deze pagina te schrappen, omdat dit simpelweg een herhaling van code is. Dat leek me een beetje saai. Ook op deze page skip ik het truspilot en betaalmethodes stukje. Ik vind dit praktische zaken die niet heel leuk zijn om te maken.
  
 </details>
 
@@ -55,7 +55,6 @@ Whey Proteine page
 ## Breakdownschets (week 1)
 
 <details>
-<summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
 <img src="images/breakdown_1.png" width="375px" alt="breakdown van de hele pagina">
@@ -77,15 +76,18 @@ Whey Proteine page
 ## Voortgang 1 (week 2)
 
 <details>
-<summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-Ik heb alleen nog maar mijn HTML geschreven en die is goed volgens Robert. Nu ga ik verder met CSS schrijven.
+Ik heb mijn volledige HTML geschreven op basis van mijn breakdown-schets. Ik denk dat ik klaar ben voor het schrijven van mijn CSS. 
 
 
 ### Verslag van meeting
-- Heading's kloppen nog niet
+Omdat ik nog niet super veel gedaan heb, is er niet zoveel feedback:
+- Ik heb mooie code geschreven en kan idd aan de slag met CSS
+- Heading's kloppen nog niet, binnen article H3 en erbuiten H2
 - Robert gaat me de maandag erna helpen met mijn code
+
+Maandag: met robert afgesproken dat alle headings binnen articles een h3 zijn en alle headings binnen sections h2's. Er is vanzelfsprekend 1x een H1, helemaal bovenaan de page.
 
 </details>
 
@@ -96,12 +98,11 @@ Ik heb alleen nog maar mijn HTML geschreven en die is goed volgens Robert. Nu ga
 ## Voortgang 2 (week 3)
 
 <details>
-<summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
 Hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-Wat niet goed ging was dat mijn grid template niet goed werkte, waardoor een paar afbeeldingen niet goed gestyled werden. Het ging hier om 3 afbeeldingen, waarbij er op de eerste rij 1 afbeelding moest komen en op de 2e rij 2 afbeeldingen. Door zelf te proberen ben ik erachter gekomen dat het lag aan dat de width per afbeelding op 100% moest staan. Dit heb ik gedaan en de afbeeldingen postioneerden zoals ik het wilde. 
+Wat niet goed ging was dat mijn grid template voor een paar afbeeldingen op de homepage niet goed werkte, waardoor deze afbeeldingen niet geplaatst werden zoals ik wil. Het ging hier om 3 afbeeldingen, waarbij er op de eerste rij 1 afbeelding moest komen en op de 2e rij 2 afbeeldingen. Door zelf te proberen ben ik erachter gekomen dat het lag aan dat de width per afbeelding op 100% moest staan. Dit heb ik gedaan en de afbeeldingen postioneerden zoals ik het wilde. 
 
 Hier stond het verkeerd:
 <img src="images/verkeerde_positionering_grid" width="375px" alt="grid werkte niet">
@@ -109,12 +110,12 @@ Hier stond het verkeerd:
 Nu staat het zo (door bij inspecteren te kijken naar de vakken in de grid template en hoe daar een afbeelding in past):
 <img src="images/goede_positionering_grid" width="375px" alt="grid werkt wel">
 
-Ik heb goede code geschreven en kan verder met transities.
+Ik heb goede code geschreven en kan verder met transities voor mijn menu's.
 
 ### Verslag van meeting
 - Grid row start en end bij elementen toevoegen in een grid, om ze goed te positioneren.
 - Minder classes en meer css selectoren in plaats daarvan gebruiken.
-- Volgens de studentassistent ben ik goed op weg en is het wijs om met transities te beginnen (hamburger, winkelmand en zoeken)
+- Volgens de studentassistent ben ik goed op weg en is het wijs om met transities te beginnen (hamburger, winkelmand).
 
 </details>
 
@@ -125,7 +126,6 @@ Ik heb goede code geschreven en kan verder met transities.
 ## Toegankelijkheidstest (week 4)
 
 <details>
-<summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
@@ -179,23 +179,59 @@ Ik ga al deze feedback verwerken.
 ## Voortgang 3 (week 4)
 
 <details>
-<summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Alles gaat eigenlijk volgens plan en ik ben lekker op schema. Het enige wat me niet lukt is de header sticky maken..
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Iets meer pseudo classes gebruiken, classes vooral voor Java gebruiken (maar ik wil juist classes voor sections om het overzicht voor mezelf te bewaren)
+- #'s in href toevoegen.
+- Oplossing gevonden voor sticky nav met de student-assistent. (= width: 100vw op de nav, op de main een 6em padding, de header position:fixed en voor de slider een width van 100%. Ten slotte een maximale breedte voor box die eromheen zit met daarbij overflow:hidden)
 
 </details>
 
 
 
+## Algemene updates (week 5)
+
+<details>
+6-10: mijn CSS tussentijds gevalideerd en kreeg alleen 4 waarschuwingen. Geen errors:
+
+<img src="images/css_validatie_1.png" width="375px" alt="css validatie">
+
+6-10: mijn JS tussentijds gevalideerd en kreeg alleen 2 errors: missing semicolon. Het ging hier slechts om 2 console-logs:
+
+<img src="images/js_validatie_1.png" width="375px" alt="js validatie">
+
+6-10: mijn HTML tussentijds gevalideerd en kreeg 18 errors en 22 waarschuwingen. De errors gingen vooral om img en a die binenn een ul staan, omdat dit niet mag als child van een ul element. 
+
+<img src="images/html_validatie_1.png" width="375px" alt="html validatie 1">
+
+<img src="images/html_validatie_1.2.png" width="375px" alt="html validatie 1.2">
+
+Ook stond er een figcaption binnen een atricle en dit mag je alleen gebruiken binnen een parent met de naam 'figure'. Dit kon ik niet wijzigen naar figure, omdat het ging om een grid block met zowel een article met tekst en articles met img's. Uiteindelijk heb ik het op moeten lossen met een div (tevens ook enige div in mijn hele code), omdat ik zo sections kon gebruiken en die gelijkwaardige styling kon geven. Zo bleef mijn grid er mooi uit zien. Het resultaat:
+
+<img src="images/div_gebruikt.png" width="375px" alt="code met div">
+
+<img src="images/resultaat_grid_div.2.png" width="375px" alt="html validatie 1.2">
+
+
+Alle errors heb ik verwerkt en de waarschuwingen heb ik ook gecontroleerd.
+
+
+
+
+Ik ben ook verder gegaan met mijn 2e page. Hier ben ik bezig met buttons naar de volgende pagina's met resultaten.
+
+Begonnen met een grid-template:
+<img src="images/grid_buttons.png" width="375px" alt="grid voor buttons">
+
+Resultaat van mijn buttons:
+<img src="images/resultaat_buttons.2.png" width="375px" alt="resultaat voor buttons">
+
+</details>
 
 
 ## Eindgesprek (week 5)
@@ -215,25 +251,29 @@ hier screenshot(s) van je eindresultaat
 
 
 
-
 ## Bronnenlijst
 
 <details open>
-<summary>continu bijhouden terwijl je werkt</summary>
 
-Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
-
-1. https://www.bulk.com/nl/
-2. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-3. https://codepen.io/shooft/pen/eYRdEPm
-4. https://codepen.io/shooft/pen/abwLwRO
-5. https://www.flaticon.com (alle icons binnen mijn footer)
-6. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr (voor lijntje tussen main en footer)
-7. https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms (voor styling van forms)
-8. https://stuffandnonsense.co.uk/blog/redesigning-your-product-and-website-for-dark-mode (voor dark mode)
-9. https://www.flaticon.com/free-icon/loupe_622669?term=search&page=1&position=1&page=1&position=1&related_id=622669&origin=search (search icon in zoekbalk)
-10. https://www.flaticon.com/free-icon/close_2089650?k=1632927769278 (kruisje sluiten van hamburgermenu)
-11. https://www.w3schools.com/css/css_positioning.asp
-12. https://elad.medium.com/css-position-sticky-how-it-really-works-54cd01dc2d46
+1. https://www.bulk.com/nl/ (Voor inspiratie)
+2. https://css-tricks.com/snippets/css/a-guide-to-flexbox/ (Uitleg over de werking van flexbox)
+3. https://codepen.io/shooft/pen/eYRdEPm (Voor positioneren van elementen binnen andere elemten: voor mij foto' in banners)
+4. https://codepen.io/shooft/pen/abwLwRO (Om na te gaan hoe grids ook alweer werken, voor mijn eigen grids)
+5. https://www.flaticon.com (Alle icons binnen mijn footer)
+6. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr (Voor het lijntje tussen main en footer)
+7. https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms (Voor styling van al mijn forms)
+8. https://stuffandnonsense.co.uk/blog/redesigning-your-product-and-website-for-dark-mode (Voor dark mode)
+9. https://www.flaticon.com/free-icon/remove_1828843?term=cross&page=1&position=5&page=1&position=5&related_id=1828843&origin=search (Search icon in zoekbalk)
+10. https://www.flaticon.com/free-icon/close_2089650?k=1632927769278 (Kruisje voor sluiten van hamburgermenu)
+11. https://www.w3schools.com/css/css_positioning.asp (Voor het positioneren van items)
+12. https://elad.medium.com/css-position-sticky-how-it-really-works-54cd01dc2d46 (Voor uitleg over position:sticky)
+13. https://codepen.io/shooft/pen/yLOdLBg?editors=1100 (Voor styling van al mijn forms)
+14. https://www.quora.com/How-do-I-add-a-background-image-located-in-the-computer-in-a-HTML-page-using-CSS (Voor het toevoegen van een background-image adhv :url) 
+15. https://stackoverflow.com/questions/45536537/centering-in-css-grid#:~:text=Use%20margin%3A%20auto%20to%20vertically%20and%20horizontally%20center%20grid%20items.&text=To%20center%20the%20content%20of%20grid%20items%20you%20need%20to,margins%20to%20the%20new%20elements. (Voor het centreren van een grid-container op mijn protein-page)
+16. https://www.reddit.com/r/css/comments/7ym886/how_to_center_align_text_inside_a_css_grid_cell/ (Om tekst te centreren in grid-cells)
+17. https://codepen.io/robertspier/pen/YzQgGbZ?editors=1100 (voor een sliding tranisitie onder mijn search form)
+18. https://www.geeksforgeeks.org/how-to-insert-video-in-web-page-and-play-it-using-html/ (voor toevoegen van de video op mijn proteïn page)
+19. https://extract.pics/ (voor het extracten van alle foto's/andere content van de bulk site)
+20. SHOUTOUT NAAR HAN 
 
 </details>

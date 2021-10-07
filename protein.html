@@ -6,79 +6,140 @@
     <title>Protein</title>
 
     <link href="styles/style.css" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="images/logo_block.jpg">
+    <link rel="icon" type="image/svg+xml" href="images/bulk_logo.svg">
 </head>
+
 <body>
     <header>
+        <!-- Navigation -->
         <nav>
-            <ul>
-                <li><a href=""><img src="" alt=""></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
-            </ul>
+            <!-- Hamburgermenu en uitschuifmenu -->
+            <a href="#"><img class="hamburger_menu" src="images/hamburger_menu.png" alt="menu"></a>
+            <article class="menu">
+                <img class="close" src="./images/close.png" alt="menu sluiten">
+                <a href="#">AANBIEDINGEN</a>
+                <hr> 
+                <a href="protein.html">Proteine</a>
+                <hr> 
+                <a href="#">Vitamines</a>
+                <hr> 
+                <a href="#">Sportvoeding</a>
+                <hr> 
+                <a href="#">Gezondheid en Welzijn</a>
+                <hr> 
+                <a href="#">Gewichtsafname</a>
+                <hr> 
+                <a href="#">Voeding</a>
+                <hr> 
+                <a href="#">Shop per assortiment</a>
+                <hr> 
+                <a href="#">Mijn account</a>
+                <hr> 
+                <a href="#">Nederland</a>
+                <hr>
+            </article>
+            <a href="index.html"><img class="logo" src="images/bulk_logo.svg" alt="logo"></a>
+            <a href="#"><img class="winkelmandje" src="images/winkelmandje.png" alt="winkelmandje"></a>
+            <!-- Winkelmand en uitschuifmenu -->
+            <article class="winkelmand">
+                <img class="close_winkelmandje" src="./images/close.png" alt="winkelmandje sluiten">
+                <p>Er zitten geen artikelen in de winkelmand</p>
+            </article>
         </nav>
+            
+         <!-- Search form -->
+         <section class="search_form">
+            <input type="search" placeholder="ZOEKEN">
+        </section>
     </header>
 
-
     <main>
-        <!--- zoek form --->
-        <section>
-            <form action="search"></form>
-            <img src="" alt="">
+        <!-- Sliding animatie -->
+        <section class="slider_onder_searchform">
+            <!-- Transitie_tekst veranderen -->
+            <article>Gratis levering bestellingen boven 50€+</article>
+            <article>45% korting op alles Code: Quicke</article>
+            <article>Grootste aanbod 1200+ producten</article>
         </section>
-
-        <!--- sliding animatie --->
-        <section>
-            <!--- Ik denk een UL met daarin een <img> + <p> die steeds schuift naar de andere (alle slides hebben andere styling; ene halve rode tekst een icoon en andere halve grijze en half zwarte tekst --->
-        </section>
-
+    
 
         <!--- tekst bovenaan --->
-        <section>
-            <p></p>
+        <section class="proteine_tekst"> 
+            <a href="#">Home > Proteïne</a>
             <article>
-                <h2></h2>
-                <p class="zwarte_p_tekst"></p>
+                <h2>Proteïne</h2>
+                <p>Maak jouw keuze uit het grote aanbod eiwitrijke producten van bulk™, van proteïnepoeders en eiwitshakes tot snacks en repen. We bieden proteïne voor ieder dieet, dus of je nu op zoek bent naar glutenvrij, paleo, vegan of lactosevrij, je vindt het gegarandeerd bij ons voor de beste prijs.</p>
+                <p>Eiwitten zijn een belangrijk supplement binnen de sportwereld, van hardlopers tot bodybuilders en krachtsporters, iedereen gebruikt het. De aminozuren in proteïne helpen bij het herstel en de groei van spierweefsel en leveren de nodige calorieën. Daarnaast verbeteren ze ook het immuunsysteem en stimuleren de spijsvertering.</p>
             </article>
-            <a href=""></a> <!--- link als soort button die tekst openklapt en dichtdoet --->
         </section>
 
 
-        <!--- producten --->
-        <section class="grid_blok_voor_nieuwe_producten_tekst_en_images">
+        <section class="sorteren_filteren">
             <article>
-                <img src="images/gist.jpg" alt=""><figcaption>GISTVLOKKEN</figcaption><p class="centreer_prijs_onderproductnaam">€9,99</p>
+                <form action="#">
+                    <label>Sorteren</label>
+                    <select id="sorteren" name="language">
+                    <option value="standaard">Sorteren v</option>
+                    <option value="Prijs van laag naar hoog">Prijs van laag naar hoog</option>
+                    <option value="Prijs van hoog naar laag">Prijs van hoog naar laag</option>
+                    <option value="A-Z">A-Z</option>
+                    <option value="Z-A">Z-A</option>
+                    <option value="Nieuw">Nieuw</option>                
+                    </select>
+                </form>
             </article>
             <article>
-                <img src="images/gist.jpg" alt=""><figcaption>GISTVLOKKEN</figcaption><p class="centreer_prijs_onderproductnaam">€9,99</p>
-            </article>
-            <article>
-                <img src="images/huid_capsules.jpg" alt=""><figcaption>CAPSULES VOOR EEN GEZONDE HUID</figcaption><p class="centreer_prijs_onderproductnaam">€32,49</p>
-            </article>
-            <article>
-                <img src="images/hart_capsules.jpg" alt=""><figcaption>CAPSULES VOOR EEN GEZOND HART</figcaption><p class="centreer_prijs_onderproductnaam">€35,99</p>
-            </article>
-            <article>
-                <img src="images/huid_capsules.jpg" alt=""><figcaption>CAPSULES VOOR EEN GEZONDE HUID</figcaption><p class="centreer_prijs_onderproductnaam">€32,49</p>
-            </article>
-            <article>
-                <img src="images/hart_capsules.jpg" alt=""><figcaption>CAPSULES VOOR EEN GEZOND HART</figcaption><p class="centreer_prijs_onderproductnaam">€35,99</p>
-            </article>
-            <article>
-                <img src="images/huid_capsules.jpg" alt=""><figcaption>CAPSULES VOOR EEN GEZONDE HUID</figcaption><p class="centreer_prijs_onderproductnaam">€32,49</p>
-            </article>
-            <article>
-                <img src="images/hart_capsules.jpg" alt=""><figcaption>CAPSULES VOOR EEN GEZOND HART</figcaption><p class="centreer_prijs_onderproductnaam">€35,99</p>
+                <a href="#">Filteren</a>
             </article>
         </section>
+
+        
+        <!--- Producten --->
+        <section class="grid_voor_protein_producten">
+            <figure>
+                <img src="images/gist.jpg" alt="afbeeldinh van een zak gist"><figcaption>GISTVLOKKEN<p>€9,99</p></figcaption>
+            </figure>
+            <figure>
+                <img src="images/huid_capsules.jpg" alt="afbeelding van capsules voor een gezonde huid"><figcaption>CAPSULES VOOR EEN GEZONDE HUID<p>€32,49</p></figcaption>
+            </figure>
+            <figure>
+                <img src="images/hart_capsules.jpg" alt="afbeelding van capsules voor het hart"><figcaption>CAPSULES VOOR EEN GEZOND HART<p>€35,99</p></figcaption>
+            </figure>
+            <figure>
+                <img src="images/hart_capsules.jpg" alt="afbeelding van capsules voor het hart"><figcaption>CAPSULES VOOR EEN GEZOND HART<p>€35,99</p></figcaption>
+            </figure>
+            <figure>
+                <img src="images/hart_capsules.jpg" alt="afbeelding van capsules voor het hart"><figcaption>CAPSULES VOOR EEN GEZOND HART<p>€35,99</p></figcaption>
+            </figure>
+            <figure>
+                <img src="images/hart_capsules.jpg" alt="afbeelding van capsules voor het hart"><figcaption>CAPSULES VOOR EEN GEZOND HART<p>€35,99</p></figcaption>
+            </figure>
+            <figure>
+                <img src="images/hart_capsules.jpg" alt="afbeelding van capsules voor het hart"><figcaption>CAPSULES VOOR EEN GEZOND HART<p>€35,99</p></figcaption>
+            </figure>
+            <figure>
+                <img src="images/hart_capsules.jpg" alt="afbeelding van capsules voor het hart"><figcaption>CAPSULES VOOR EEN GEZOND HART<p>€35,99</p></figcaption>
+            </figure>
+        </section>
+
+        <!--- vid --->
 
 
         <!--- buttons (blauw op pagina waar je bent) --->
+        <section class="pijl_en_paginanummers">
+                <a href="#">-></a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">...</a>
+                <a href="#">6</a>
+        </section>
+
         <section>
-            <ul>
-                <li><p></p></li>
-                <li><p></p></li>
-            </ul>
+            <h2>Coole video van mij</h2>
+            <video controls>
+              <source src="video/olaf_in_de_gym.mp4" type="video/mp4">
+            </video> 
         </section>
 
         <!-- #thisisnutrition tekst -->
@@ -95,23 +156,24 @@
             <img src="images/drinkende_vrouw.jpg" alt="Afbeelding van drinkende vrouw">
         </section>
 
-        <!--- contactform met button --->
-        <section>
-            <h2></h2>
-            <p class="zwarte_p_tekst"></p>
-            <form action=""></form>
-            <button class="button_zwart"></button>
-            <img src="" alt="">
+        <!-- Contact form en button -->
+        <section class="blijf_in_contact">
+            <article class="contact_section">
+                <h2>Blijf in contact</h2>
+                <p>Zin in kortingen en fitness-tips rechtstreeks in je inbox? Je weet wat je moet doen.</p>
+            </article>
+            <input type="search" placeholder="Vul hier jouw e-mailadres in">
+                <a href="#">inschrijven</a>
         </section>
 
 
         <!-- Tekst: gratis levering -->
-        <section>
+        <section class="tekstsection_onder_contact_form">
             <article>
                 <img src="" alt="">
                 <h3>Gratis Levering</h3>
                 <p>Gratis levering bestellingen boven €50</p>
-                <button class="alle_witte_buttons">MEER</button>
+                <a href="#" class="alle_witte_buttons">MEER</a>
             </article>
         
         <!-- Tekst: beveel een vriend aan -->
@@ -119,7 +181,7 @@
                 <img src="" alt="">
                 <h3>Beveel Een Vriend Aan</h3>
                 <p>Zin in een korting van €10? Dit kan zeker als je een vriend kennis laat maken met bulk.</p>
-                <button class="alle_witte_buttons">MEER</button>
+                <a href="#" class="alle_witte_buttons">MEER</a>
             </article>
         
         <!-- Tekst: this is nutrition -->
@@ -127,7 +189,7 @@
                 <img src="" alt="">
                 <h3>This Is Nutrition</h3>
                 <p>Nieuwe look, dezelfde ongelooflijke kwaliteit, prestaties en smaken.</p>
-                <button class="alle_witte_buttons">ONTDEK MEER</button>
+                <a href="#" class="alle_witte_buttons">ONTDEK MEER</a>
             </article>
         </section>
     </main>
@@ -139,11 +201,13 @@
         <hr class="solid_lijn_boven_social_media_buttons">
         <!--- Social media buttons --->
         <section class="socialmedia_buttons_footer">
-            <a href="https://www.instagram.com/bulk/"><img src="images/instagram.svg" alt="link naar instagram account van Bulk"></a>
-            <a href="https://twitter.com/bulkofficial"><img src="images/twitter.svg" alt="link naar twitter account van Bulk"></a>
-            <a href="https://nl-nl.facebook.com/bulk"><img src="images/facebook-app-logo.svg" alt="link naar facebook account van Bulk"></a>
-            <a href="https://www.youtube.com/channel/UCKt0SXkzS_yxKVOKtK_sn5g"><img src="images/youtube.svg" alt="link naar youtube kanaal van Bulk"></a>
-            <a href="https://open.spotify.com/artist/2Dt4Muc3HnL4PUTrOLo0V0"><img src="images/spotify.svg" alt="link naar het spotify account van Bulk"></a>
+            <ul>
+                <li><a href="https://www.instagram.com/bulk/"><img src="images/instagram.svg" alt="link naar instagram account van Bulk"></a></li>
+                <li><a href="https://twitter.com/bulkofficial"><img src="images/twitter.svg" alt="link naar twitter account van Bulk"></a></li>
+                <li><a href="https://nl-nl.facebook.com/bulk"><img src="images/facebook-app-logo.svg" alt="link naar facebook account van Bulk"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCKt0SXkzS_yxKVOKtK_sn5g"><img src="images/youtube.svg" alt="link naar youtube kanaal van Bulk"></a></li>
+                <li><a href="https://open.spotify.com/artist/2Dt4Muc3HnL4PUTrOLo0V0"><img src="images/spotify.svg" alt="link naar het spotify account van Bulk"></a></li>
+            </ul>
         </section>
 
 
@@ -164,6 +228,5 @@
     </footer>
 
     <script src="./scripts/script.js"></script>
-</body>
 </body>
 </html>

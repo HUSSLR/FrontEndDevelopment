@@ -1,4 +1,4 @@
-console.log("test")
+console.log("test");
 
 /* Hamburgermenu */
 var HamburgerMenuOpenenButton = document.querySelector(".hamburger_menu");
@@ -22,10 +22,15 @@ var winkelMandjeSluiten = document.querySelector(".close_winkelmandje");
 
 function toggleWinkelmand(){
 	let openWinkelmand = document.querySelector(".winkelmand");
-	console.log("test")
+	console.log("test");
 	openWinkelmand.classList.toggle("mandjeOpenen");
 }
 
 winkelMandjeOpenen.addEventListener("click", toggleWinkelmand); 
 
 winkelMandjeSluiten.addEventListener("click", toggleWinkelmand);
+
+
+
+
+

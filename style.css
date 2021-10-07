@@ -1,0 +1,1076 @@
+/************************************/
+/* Styling voor gehele CSS-document */
+/************************************/
+
+*, *::after, *::before {
+  box-sizing:border-box;  
+  padding: 0;
+  margin: 0;
+}
+
+
+
+/*********/
+/* ROOTS */
+/*********/
+
+/* Root voor alle kleuren */
+:root{
+/* Background kleuren */
+  --background-color: white;
+  --background-color-slider: white;
+  --background-color-winkelmand-hamburger: white;
+  --background-color-contact-tile: rgb(230, 230, 230); 
+  --background-color-zwarte-banner: black;
+  --background-color-zwarte-banner-button: white;
+/* Tekst kleuren */
+  --h1-color: white;
+  --heading-color: black;
+  --header-color: white;
+  --p-color: black;
+  --text-color-zwart: black;
+  --text-color-rood: red;
+  --text-color-wit: white;
+  --text-color-grijs: grey;
+  --text-color-zwart-slider: black;
+  --text-color-zwart-form: black;
+  --text-color-button-contact-form: white;
+  --a-color-wit: white;
+  --a-color-zwart: black;
+  --a-color-rood: red;
+  --a-color-wit-button-onder-contactform: white;
+  --form-color: #fafafa;
+  --text-color-wit-banner: white;
+  --color-filteren-sorteren: rgb(247, 245, 245);
+/* State kleuren */
+  --state-button-color: rgb(71, 101, 233);
+  --state-text-color: white;
+/* Specifieke styling kleuren */
+  --menu-hr-color: #fafafa;
+  --color-underline-grijs: grey;
+  --color-lichtgrijs: lightgrey;
+  --color-zwarte-button: black;
+  --color-witte-button: white;
+  --color-border-witte-button: white;
+  --color-pagina-buttons: #ebebeb;
+  --a-color-wit-button-onder-contactform: white;
+}
+
+/* Root voor DarkMode */
+@media (prefers-color-scheme:dark){
+  :root{
+/* Background kleuren */
+--background-color: black;
+--background-color-contact-tile: rgb(49, 45, 45); 
+/* Tekst kleuren */
+  --heading-color: white;
+  --a-color-wit: black;
+  --p-color: white;
+  --text-color-zwart: white;
+  --text-color-wit: black;
+  --text-color-grijs: white;
+/* Specifieke styling kleuren */
+  --color-underline-grijs: white;
+  --color-lichtgrijs: white;
+  --color-zwarte-button: white;
+}
+}
+
+
+
+/*********/
+/* FONTS */
+/*********/
+@font-face {
+  font-family: 'BulkSans_Black';
+  src: url('../fonts/BulkSans-Black.woff2');
+}
+
+@font-face {
+  font-family: 'BulkSans_Bold';
+  src: url('../fonts/BulkSans-Bold.woff2');
+}
+
+@font-face {
+  font-family: 'BulkSans_SemiBold';
+  src: url('../fonts/BulkSans-SemiBold.woff2');
+}
+
+@font-face {
+  font-family: 'BulkSans_Medium';
+  src: url('../fonts/BulkSans-Medium.woff2');
+}
+
+@font-face {
+  font-family: 'BulkSans_Light';
+  src: url('../fonts/BulkSans-Light.woff2');
+}
+
+@font-face {
+  font-family: 'BulkSans_ExtraLight';
+  src: url('../fonts/BulkSans-ExtraLight.woff2');
+}
+
+@font-face {
+  font-family: 'LumaIcons';
+  src: url('../fonts/Luma-Icons.woff2');
+}
+
+
+
+/*****************************************/
+/* ALGEMENE STYLING OVER VOOR ALLE PAGES */
+/*****************************************/
+
+/* Algemene styling van bodyelementen */
+body{
+  background-color:var(--background-color);
+}
+
+header{
+  background-color: var(--header-color);
+  padding-bottom: 1em;
+  position: fixed;
+  width: 100vw;
+}
+
+main{
+  padding-top: 6em;
+  width: 100vw;
+  overflow: hidden;
+}
+
+nav{
+  background-color: var(--header-color);
+  width: 100vw;
+  display: flex;  
+  margin-top: 0;
+  margin-bottom: 0.8em;
+  padding: .5em;
+  align-items: flex-end;
+  justify-content: space-between;
+  z-index: 4;
+  transition: top 1.25s;
+  overflow: hidden;
+}
+
+/* Algemene styling van tekstelementen */
+h1{
+  font-size: 4em;
+  font-family: 'BulkSans_Black';
+  margin-bottom: 0%;
+  color: var(--h1-color);
+}
+
+h2{
+  font-family: 'BulkSans_Bold';
+  font-size: 1.8em;
+  width: 85%;
+  margin-bottom: 0;
+  margin-top: 0.2em;
+  margin-left: 10%;
+  color: var(--heading-color);
+}
+
+h3{
+  font-family: 'BulkSans_Bold';
+  font-size: 1.8em;
+  width: 85%;
+  margin-bottom: 0;
+  margin-top: 0.2em;
+  margin-left: 10%;
+  color: var(--heading-color);
+}
+
+p{
+  font-family: 'BulkSans_Light';
+  font-size: .8em;
+  color: var(--text-color-zwart);
+  width: 80%;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  margin-left: 10%;
+}
+
+figcaption{
+  font-family: 'BulkSans_Bold';
+  font-size: .9em;
+  color: var(--text-color-zwart);
+  text-align: center;  
+  margin-top: 1em;
+}
+
+
+
+/**************************************************************/
+/* Specifieke styling voor beide pages van boven naar beneden */
+/**************************************************************/
+
+/**********/
+/* HEADER */
+/**********/
+
+/* Hamburger menu en toebehoren */
+/* De img van het hamburger menu */
+.hamburger_menu{
+  width: 1.2em;
+  height: 100%;
+  margin-top: 0%;
+}
+
+/* De inhoud van het menu */
+.menu{
+  background-color: var(--background-color-winkelmand-hamburger);
+  width: 90%;
+  height: 100%;
+  margin-top: 0;
+	position: fixed;
+	left:0;
+	right:0;
+  top:0;
+  list-style-type: none;
+  transform: translateX(-101%);
+  transition:.5s;
+  z-index: 5;
+}
+
+.menu a{
+  font-family: 'BulkSans_Bold';
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  text-decoration-line: none;
+  color: var(--text-color-zwart-form);
+}
+
+.menu a:first-of-type{
+  font-family: 'BulkSans_Bold';
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  margin-top: 0em;
+  text-decoration-line: none;
+  color: var(--text-color-rood);
+}
+
+.menu hr{
+  width: 100%;
+  color: var(--menu-hr-color);
+  height: 0;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.menu a:focus{
+  color: var(--state-text-color);
+  background-color: var(--state-button-color);
+}
+
+/* De button voor het sluiten van de winkelmand */
+.close{   
+  appearance: none;
+  margin: 0;
+  width: 1.2em;
+  margin: 0;
+  margin-top: 2%;
+  margin-left: 90%;
+}
+
+/* De class die ervoor zorgt dat het winkelmandje verschijnt als er op de button geklikt wordt */
+.menu.Uitgeklapt{
+  transform:translateX(0%);
+}
+
+
+/* Winkelmandje en toebehoren */
+/* De img van de winkelmand */
+.winkelmandje{
+  width: 1.1em;
+  height: 100%;
+}
+
+/* De inhoud van de winkelmand */
+.winkelmand{
+	background-color: var(--background-color-winkelmand-hamburger);
+  width: 100%;
+  height: 100%;
+  padding-bottom: 1000em;
+  margin-top: 0;
+	position: absolute;
+	left:0;
+	right:0;
+  top:0;
+  list-style-type: none;
+  transform: translateX(105%);
+  transition:.5s;
+  z-index: 5;
+}
+
+.winkelmand p{
+  font-family: 'BulkSans_Bold';
+  color: var(--text-color-zwart-form);
+  text-align: center;
+}
+
+/* De button voor het sluiten van de winkelmand */
+.close_winkelmandje{   
+  appearance: none;
+  margin: 0;
+  margin-top: 2%;
+  margin-left: 80%;
+  width: 1.2em;
+}
+
+/* De class die ervoor zorgt dat het winkelmandje verschijnt als er op de button geklikt wordt */
+.winkelmand.mandjeOpenen{
+  transform:translateX(10%);
+}
+
+
+/* Bulk logo in de nav */
+.logo{
+  width: 5.4em;
+  height: 100%;
+}
+
+
+/* Search form */
+/* Styling voor input */
+.search_form input{
+  font-family: 'BulkSans_SemiBold';
+  margin-left: 1em;
+  line-height: 3em;
+  padding: 0 1em;
+  color:var(--input-color);
+  background-color: var(--form-color);
+  border: none;
+  border-radius: 2em;
+  /* Om het standaard randje bij focus niet te tonen */
+  outline: none;
+  /* Nodig voor telefoons */
+  appearance: none;
+}
+
+.search_form input::placeholder{
+  color: var(--text-color-zwart-form);
+}
+
+.search_form input[type="search"]{
+  width: 93%;
+  padding-left: 3em;
+  background-image: url('file:///Users/olafhusslage/Desktop/basiswebsite/images/search.png');
+  background-repeat: no-repeat;
+  background-size: 1.25em auto;
+  background-position: .75em center;
+}
+
+.search_form input[type="search"]:placeholder-shown{
+  /* Als de zoekbox leeg is - dan een lichtere loop */
+  background-image:url("file:///Users/olafhusslage/Desktop/basiswebsite/images/search.png");
+}
+
+/* De reset knop */
+.search_form input::-webkit-search-cancel-button{
+  /* Andere soort x */
+  appearance: none;
+  position: absolute;
+  width: 1em; 
+  height: 1em;
+  right: .75em;
+  background-image: url("file:///Users/olafhusslage/Desktop/basiswebsite/images/remove_text_form.png");
+  background-repeat: no-repeat;
+  background-size: 1em auto;
+  background-position: center center;
+}
+
+
+/* Slideshow onder de search form */
+.slider_onder_searchform{
+  display: flex;
+  position: relative;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	animation-name: slideshow;
+	animation-duration:12s;
+	animation-iteration-count: infinite;
+  width: 100vw;
+  z-index: -1;
+  margin-bottom: 1em;
+}
+
+.slider_onder_searchform article{
+  font-family: 'BulkSans_Bold';
+  text-align: center;
+	min-width: calc(100%);
+	background: var(--background-color-slider);
+	color: var(--text-color-zwart);
+  padding: 1em;
+  margin-top: 1em;
+}
+
+/* De verschillende elementen binnen de slider */
+.slider_onder_searchform article:first-of-type{
+  background-color: var(--background-color-slider);
+  color: var(--text-color-zwart-slider);
+}
+
+.slider_onder_searchform article:nth-of-type(2){
+  background-color: var(--background-color-slider);
+  color: var(--text-color-zwart-slider);
+}
+
+.slider_onder_searchform article:nth-of-type(3){
+  background-color: var(--background-color-slider);
+  color: var(--text-color-zwart-slider);
+}
+
+/* De keyframe die zorgt dat de elementen van de slideshow worden getoont */
+@keyframes slideshow{
+	0% {
+		transform: translateX(0);
+	}
+	33% {
+		transform: translateX(-100%);
+	}
+	66% {
+		transform: translateX(-200%);
+	}
+}
+
+
+
+/********/
+/* MAIN */
+/********/
+
+/* Contact form en a */
+.blijf_in_contact{
+  align-items: center;
+  text-align: center;
+  padding-top: 0.1em;
+  padding-bottom: 3em;
+  background-color: var(--background-color-contact-tile);
+}
+
+.blijf_in_contact h2{
+  margin-top: 2em;
+  margin-left: 1em;
+  text-align: center;
+}
+
+/* Styling voor input van het contact-form */
+.blijf_in_contact input{
+  font-family: 'BulkSans_SemiBold';
+  max-width: 30em;
+  line-height: 3em;
+  margin-bottom: 3em;
+  padding: 0 1em;
+  color:var(--input-color);
+  background-color: var(--form-color);
+  border: none;
+  border-radius: .2em;
+  /* Om het standaard randje bij focus niet te tonen */
+  outline: none;
+  /* Nodig voor telefoons */
+  appearance: none;
+}
+
+.blijf_in_contact input::placeholder{
+  color: var(--text-color-zwart-form);
+}
+
+.blijf_in_contact input[type="email"]{
+  width: 93%;
+  padding-left: 3em;
+  background-image: url('file:///Users/olafhusslage/Desktop/basiswebsite/images/email.png');
+  background-repeat: no-repeat;
+  background-size: 1.25em auto;
+  background-position: .75em center;
+}
+
+.blijf_in_contact input[type="email"]:placeholder-shown{
+  background-image: url("file:///Users/olafhusslage/Desktop/basiswebsite/images/email.png");
+}
+
+/* De reset knop */
+.blijf_in_contact input::-webkit-search-cancel-button{
+  /* Ander soort kruisje */
+  appearance: none;
+  position: absolute;
+  width: 1em; 
+  height: 1em;
+  right: .75em;
+  background-image: url("file:///Users/olafhusslage/Desktop/basiswebsite/images/remove_text_form.png");
+  background-repeat: no-repeat;
+  background-size: 1em auto;
+  background-position: center center;
+}
+
+/* Styling voor a van het contact-form */
+.blijf_in_contact a{
+  font-family: 'BulkSans_Bold';
+  font-size: .8em;
+  text-decoration-line: none;
+  width: 33%;
+  padding: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  color: var(--text-color-button-contact-form);
+  border: none;
+  border-radius: 3em;
+  background-color: var(--a-color-zwart);
+}
+
+.blijf_in_contact a:focus{
+  color: var(--state-text-color);
+  background-color: var(--state-button-color);
+}
+
+
+/* Tekstsection onder het contact form */
+.tekstsection_onder_contact_form{
+  margin-bottom: 3em;
+}
+
+.tekstsection_onder_contact_form article{
+  margin-top: 4em;
+}
+
+.tekstsection_onder_contact_form article:first-of-type{
+  margin-top: 2em;
+}
+
+.tekstsection_onder_contact_form a{
+  font-family: 'BulkSans_Bold';
+  font-size: .8em;
+  padding: 1em;
+  margin-bottom: 8em;
+  margin-left: 10%;;
+  text-decoration-line: none;
+  width: 33%;
+  color: var(--a-color-zwart);
+  border-radius: 3em;
+  text-align: center;  
+  border: 2px solid var(--a-color-zwart);
+  background-color: var(--a-color-wit-button-onder-contactform);
+}
+
+.tekstsection_onder_contact_form a:focus{
+  color: var(--state-text-color);
+  background-color: var(--state-button-color);
+}
+
+
+
+/***********/
+/* FOOTER */
+/*********/
+
+/* Lijntje tussen main en footer */
+footer hr{
+  width: 100%;
+  color: var(--color-lichtgrijs);
+  padding: 0;
+  margin-bottom: 2em;
+  margin-top: 0;
+}
+
+/* Social media buttons */
+.socialmedia_buttons_footer{
+  width: 100%;
+}
+
+.socialmedia_buttons_footer ul{
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  align-items: center;
+  margin-left: 2em;
+}
+
+.socialmedia_buttons_footer img{
+  width: 30%;
+}
+
+
+/* Links onderaan de page */
+.external_links a{
+  text-decoration-line: none;
+}
+
+
+/* Grijs copyright balkje onderaan */
+.copyright_balkje_onderin_footer{
+  background-color: var(--color-underline-grijs);
+  width: 100%;
+  padding: .2em;
+  display: flex;
+  justify-content: center;
+}
+
+.copyright_balkje_onderin_footer :first-of-type{
+  color: black;
+  text-decoration: none;
+  margin: .5em;
+}
+
+
+/*********************************************************************/
+/* Specifieke styling voor page 1 (home page) van boven naar beneden */
+/*********************************************************************/
+
+/**************************/
+/* MAIN (meer is er niet) */
+/**************************/
+
+/* Zwarte korting banner met 'shop nu' button */
+.zwarte_korting_banner{
+  background-color: var(--background-color-zwarte-banner);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.zwarte_korting_banner p:nth-of-type(1){
+  font-family: 'BulkSans_Medium';
+  font-size: 2em;
+  color: var(--text-color-wit-banner);
+  margin: 0;
+  align-items: center;  
+  text-align: center;
+  margin-bottom: .5em;
+}
+
+.zwarte_korting_banner p:nth-of-type(2){
+  color: var(--text-color-wit-banner);
+  font-size: 1em;
+  margin: 0;
+  align-items: center;  
+  text-align: center;
+}
+
+/* 'shop nu' button op zwarte banner*/
+.zwarte_korting_banner a{
+  font-family: 'BulkSans_Bold';
+  padding: 1.1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 40%;
+  color: var(--a-color-zwart);
+  border-radius: 3em;
+  border: none;
+  text-align: center;  
+  background-color: var(--background-color-zwarte-banner-button);
+  text-decoration-line: none;
+}
+
+.zwarte_korting_banner a:focus{
+  color: var(--state-text-color);
+  background-color: var(--state-button-color);
+}
+
+
+/* Blauwe banner met plaatje van potjes erop */
+.potjes_image_met_banner{
+  position: relative;
+  margin-top: 2em;
+  z-index: -2;
+}
+
+.potjes_image_met_banner img:first-of-type{
+  position: absolute;
+  z-index: 1;
+  width: 80%;
+  margin: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.potjes_image_met_banner img:last-of-type{
+  width: 100%;
+}
+
+/* Tekst onder blauwe banner met plaatje van potjes erop */
+.dit_zijn_onze_helden_voor_je_gezondheid_tekst p:first-of-type{
+  font-family: 'BulkSans_Bold';
+  margin-bottom: 1em;
+  margin-left: 10%;
+  padding: 0.2em;
+  margin-top: 2em;
+  width: 20%;
+  color: var(--a-color-wit);
+  border-radius: 3em;
+  border: none;
+  text-align: center;  
+  background-color: var(--a-color-rood);
+}
+
+.dit_zijn_onze_helden_voor_je_gezondheid_tekst a{
+  font-family: 'BulkSans_Bold';
+  font-size: .9em;
+  padding: 0.6em;
+  margin-bottom: 2em;
+  margin-left: 10%;
+  text-decoration-line: none;
+  width: 33%;
+  color: var(--a-color-wit);
+  border-radius: 3em;
+  text-align: center;  
+  border: none;
+  background-color: var(--color-zwarte-button);
+}
+
+.dit_zijn_onze_helden_voor_je_gezondheid_tekst a:focus{
+  color: var(--state-text-color);
+  background-color: var(--state-button-color);
+}
+
+
+/* Oranje banner met siroop img erop */
+.banner_met_siroop_img{
+  position: relative;
+  margin-top: 2em;
+  z-index: -3;
+}
+
+.banner_met_siroop_img img:first-of-type{
+  position: absolute;
+  z-index: 1;
+  width: 80%;
+  margin: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner_met_siroop_img img:last-of-type{
+  width: 100%;
+}
+
+/* a bij oranje banner met siroop img erop */
+.gouden_siroopsmaak_tekst a{
+  font-family: 'BulkSans_Bold';
+  font-size: .9em;
+  padding: 0.6em;
+  margin-bottom: 2em;
+  margin-left: 10%;
+  text-decoration-line: none;
+  width: 33%;
+  color: var(--a-color-wit);
+  border-radius: 3em;
+  text-align: center;  
+  border: none;
+  background-color: var(--color-zwarte-button);
+}
+
+.gouden_siroopsmaak_tekst a:focus{
+  color: var(--state-text-color);
+  background-color: var(--state-button-color);
+}
+
+/* Tekst bij oranje banner met siroop img erop */
+.gouden_siroopsmaak_tekst p:first-of-type{
+  font-family: 'BulkSans_Bold';
+  padding: 0.2em;
+  margin-bottom: 1em;
+  margin-left: 10%;
+  margin-top: 2em;
+  width: 20%;
+  color: var(--a-color-wit);
+  border-radius: 3em;
+  border: none;
+  text-align: center;  
+  background-color: var(--a-color-rood);
+}
+
+
+/* 'Nieuwe producten' grid */
+/* De div is puur voor de styling, omdat er verschillende elementen in staan */
+div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5em;
+  color: var(--text-color-zwart);
+  margin: 1em;
+  margin-top: 3em;
+}
+
+div figure{
+  margin: 0;
+}
+
+div img{
+  width: 100%;
+}
+
+div figcaption p{
+  margin-top: .5em;
+  font-size: 1em;
+} 
+
+
+/* Bulk | ourplanet banner */
+.ourplanet_banner img:first-of-type{
+  width: 100%;
+  margin-top: 2em;
+}
+
+.ourplanet_banner a{
+  font-family: 'BulkSans_Bold';
+  font-size: .9em;
+  padding: 0.6em;
+  margin-bottom: 2em;
+  margin-left: 10%;
+  text-decoration-line: none;
+  width: 33%;
+  color: var(--a-color-wit);
+  border-radius: 3em;
+  text-align: center;  
+  border: none;
+  background-color: var(--color-zwarte-button);
+}
+
+.ourplanet_banner a:focus{
+  color: var(--state-text-color);
+  background-color: var(--state-button-color);
+}
+
+
+/* #thisisnutrition tekst */
+.ThisisNutrition_tekst h2{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.ThisisNutrition_tekst p{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+
+/* Drie images (bulk-logo, man en vrouw) in grid block */
+.drie_images_bulk_vrouw_en_man{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.drie_images_bulk_vrouw_en_man img:first-of-type{
+  grid-column-start: 3;
+  grid-column-end: 1;
+  width: 100%;
+}
+
+.drie_images_bulk_vrouw_en_man img:nth-of-type(2){
+  grid-column-start: -2;
+  grid-column-end: -3;
+  width: 100%;
+}
+
+.drie_images_bulk_vrouw_en_man img:nth-of-type(3){
+  grid-column-start: -2;
+  grid-column-end: -2;
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+
+/*********************************************************************************/
+/* Specifieke styling voor page 2 (Proteïn page) op basis van boven naar beneden */
+/*********************************************************************************/
+
+/**************************/
+/* MAIN (meer is er niet) */
+/**************************/
+
+/* Proteïne tekst */
+.proteine_tekst article{
+  width: 100%;
+  height: 100%;
+  margin-top: 0%;
+  text-align: center;
+}
+
+.proteine_tekst a{
+  margin-left: 2em;
+  font-family: 'BulkSans_Medium';
+  font-size: .8em;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-color-zwart);
+}
+
+
+/* Sorteren en filteren */
+.sorteren_filteren{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: .2em;
+  margin: 0;
+  margin-top: 4em;
+  margin-bottom: 0;
+}
+
+/* Form voor sorteren */
+.sorteren_filteren select{
+  font-family: 'BulkSans_Medium';
+  font-size: 1em;
+  width: 100%;
+  line-height: 3.5em;
+  padding: 0 1em;
+  color:var(--input-color);
+  background-color: var(--form-color);
+  border: none;
+  border-radius: .1em;
+  /* Om het standaard randje bij focus niet te tonen */
+  outline: none;
+  /* Nodig voor telefoons */
+  appearance: none;
+  text-align: center;
+}
+
+.sorteren_filteren select:focus{
+  color: var(--state-text-color);
+  background-color: var(--state-button-color);
+}
+
+.sorteren_filteren article:first-of-type label{
+  display: none;
+}
+
+.sorteren_filteren option:first-of-type{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 100%;
+}
+
+/* Styling voor filteren tekst*/
+.sorteren_filteren article a{
+  font-family: 'BulkSans_Medium';
+  font-size: 1em;
+  color: var(--a-color-zwart);
+  background-color: var(--form-color);
+  height: 3.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration-line: none;
+}
+
+.sorteren_filteren article a:focus{
+  color: var(--state-text-color);
+  background-color: var(--state-button-color);
+}
+
+.sorteren_filteren article:last-of-type{
+  grid-column-start: -1;
+  grid-column-end: 2;
+  width: 100%;
+  text-decoration-line: none;
+}
+
+
+/* Pagina-nummers onder producten */
+.grid_voor_protein_producten{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.2em;
+  color: var(--text-color-zwart);
+  margin: 0;
+  margin-top: 1em;
+}
+
+.grid_voor_protein_producten figure{
+  margin: 0;
+}
+
+.grid_voor_protein_producten img{
+  width: 100%;
+}
+
+.grid_voor_protein_producten figcaption p{
+  margin-top: .5em;
+  font-size: 1em;
+} 
+
+
+/* Video van mij */
+video{
+  width: 100%;
+  height: 15em;
+}
+
+
+/* Pagina-nummers onder producten */
+.pijl_en_paginanummers{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  grid-gap: .5em;
+  margin-top: 2em;
+  margin-bottom: 4em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.pijl_en_paginanummers a{
+  font-family: 'BulkSans_Medium';
+  color: var(--a-color-zwart);
+  background-color: var(--color-pagina-buttons);
+  border-radius: .5em;
+  height: 3.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration-line: none;
+}
+
+
+/* Aparte styling voor de grootte van de elementen binnen het grid */
+.pijl_en_paginanummers a:first-of-type{
+  grid-column-start: 1;
+  grid-column-end: 6;
+  width: 100%;
+}
+
+.pijl_en_paginanummers a:nth-of-type(2){
+  grid-column-start: 1;
+  grid-column-end: auto;
+  width: 100%;
+}
+
+.pijl_en_paginanummers a:nth-of-type(3){
+  grid-column-end: auto;
+  width: 100%;
+
+}
+
+.pijl_en_paginanummers a:nth-of-type(4){
+  grid-column-end: auto;
+  width: 100%;
+}
+
+.pijl_en_paginanummers a:nth-of-type(5){
+  grid-column-end: auto;
+  width: 100%;
+}
+
+.pijl_en_paginanummers a:nth-of-type(6){
+  grid-column-end: auto;
+  width: 100%;
+}
+
+.pijl_en_paginanummers a:focus{
+  color: var(--state-text-color);
+  background-color: var(--state-button-color);
+}

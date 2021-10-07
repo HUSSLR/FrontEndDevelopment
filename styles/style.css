@@ -202,9 +202,9 @@ figcaption{
 
 
 
-/*******************************************************************************/
-/* Specifieke styling voor page 1 (home page) op basis van boven naar beneden  */
-/*******************************************************************************/
+/**************************************************************/
+/* Specifieke styling voor beide pages van boven naar beneden */
+/**************************************************************/
 
 /**********/
 /* HEADER */
@@ -283,7 +283,7 @@ figcaption{
 }
 
 
-/* Winkelandje en toebehoren */
+/* Winkelmandje en toebehoren */
 /* De img van de winkelmand */
 .winkelmandje{
   width: 1.1em;
@@ -310,6 +310,7 @@ figcaption{
 .winkelmand p{
   font-family: 'BulkSans_Bold';
   color: var(--text-color-zwart-form);
+  text-align: center;
 }
 
 /* De button voor het sluiten van de winkelmand */
@@ -356,12 +357,12 @@ figcaption{
 }
 
 .search_form input[type="search"]{
-  width:93%;
+  width: 93%;
   padding-left: 3em;
   background-image: url('file:///Users/olafhusslage/Desktop/basiswebsite/images/search.png');
-  background-repeat:no-repeat;
-  background-size:1.25em auto;
-  background-position:.75em center;
+  background-repeat: no-repeat;
+  background-size: 1.25em auto;
+  background-position: .75em center;
 }
 
 .search_form input[type="search"]:placeholder-shown{
@@ -373,14 +374,14 @@ figcaption{
 .search_form input::-webkit-search-cancel-button{
   /* Andere soort x */
   appearance: none;
-  position:absolute;
+  position: absolute;
   width: 1em; 
   height: 1em;
-  right:.75em;
-  background-image:url("file:///Users/olafhusslage/Desktop/basiswebsite/images/remove_text_form.png");
-  background-repeat:no-repeat;
-  background-size:1em auto;
-  background-position:center center;
+  right: .75em;
+  background-image: url("file:///Users/olafhusslage/Desktop/basiswebsite/images/remove_text_form.png");
+  background-repeat: no-repeat;
+  background-size: 1em auto;
+  background-position: center center;
 }
 
 
@@ -439,9 +440,66 @@ figcaption{
 
 
 
+/***********/
+/* FOOTER */
 /*********/
-/* MAIN */
-/*******/
+
+/* Lijntje tussen main en footer */
+footer hr{
+  width: 100%;
+  color: var(--color-lichtgrijs);
+  padding: 0;
+  margin-bottom: 2em;
+  margin-top: 0;
+}
+
+/* Social media buttons */
+.socialmedia_buttons_footer{
+  width: 100%;
+}
+
+.socialmedia_buttons_footer ul{
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  align-items: center;
+  margin-left: 2em;
+}
+
+.socialmedia_buttons_footer img{
+  width: 30%;
+}
+
+
+/* Links onderaan de page */
+.external_links a{
+  text-decoration-line: none;
+}
+
+
+/* Grijs copyright balkje onderaan */
+.copyright_balkje_onderin_footer{
+  background-color: var(--color-underline-grijs);
+  width: 100%;
+  padding: .2em;
+  display: flex;
+  justify-content: center;
+}
+
+.copyright_balkje_onderin_footer :first-of-type{
+  color: black;
+  text-decoration: none;
+  margin: .5em;
+}
+
+
+/*********************************************************************/
+/* Specifieke styling voor page 1 (home page) van boven naar beneden */
+/*********************************************************************/
+
+/**************************/
+/* MAIN (meer is er niet) */
+/**************************/
 
 /* Zwarte korting banner met 'shop nu' button */
 .zwarte_korting_banner{
@@ -521,6 +579,7 @@ figcaption{
   font-family: 'BulkSans_Bold';
   margin-bottom: 1em;
   margin-left: 10%;
+  padding: 0.2em;
   margin-top: 2em;
   width: 20%;
   color: var(--a-color-wit);
@@ -596,6 +655,7 @@ figcaption{
 /* Tekst bij oranje banner met siroop img erop */
 .gouden_siroopsmaak_tekst p:first-of-type{
   font-family: 'BulkSans_Bold';
+  padding: 0.2em;
   margin-bottom: 1em;
   margin-left: 10%;
   margin-top: 2em;
@@ -740,30 +800,30 @@ div figcaption p{
 }
 
 .blijf_in_contact input[type="email"]{
-  width:93%;
+  width: 93%;
   padding-left: 3em;
   background-image: url('file:///Users/olafhusslage/Desktop/basiswebsite/images/email.png');
-  background-repeat:no-repeat;
-  background-size:1.25em auto;
-  background-position:.75em center;
+  background-repeat: no-repeat;
+  background-size: 1.25em auto;
+  background-position: .75em center;
 }
 
 .blijf_in_contact input[type="email"]:placeholder-shown{
-  background-image:url("file:///Users/olafhusslage/Desktop/basiswebsite/images/email.png");
+  background-image: url("file:///Users/olafhusslage/Desktop/basiswebsite/images/email.png");
 }
 
 /* De reset knop */
 .blijf_in_contact input::-webkit-search-cancel-button{
   /* Ander soort kruisje */
   appearance: none;
-  position:absolute;
+  position: absolute;
   width: 1em; 
   height: 1em;
-  right:.75em;
-  background-image:url("file:///Users/olafhusslage/Desktop/basiswebsite/images/remove_text_form.png");
-  background-repeat:no-repeat;
-  background-size:1em auto;
-  background-position:center center;
+  right: .75em;
+  background-image: url("file:///Users/olafhusslage/Desktop/basiswebsite/images/remove_text_form.png");
+  background-repeat: no-repeat;
+  background-size: 1em auto;
+  background-position: center center;
 }
 
 /* Styling voor a van het contact-form */
@@ -820,59 +880,6 @@ div figcaption p{
   background-color: var(--state-button-color);
 }
 
-
-
-/***********/
-/* FOOTER */
-/*********/
-
-/* Lijntje tussen main en footer */
-footer hr{
-  width: 100%;
-  color: var(--color-lichtgrijs);
-  padding: 0;
-  margin-bottom: 2em;
-  margin-top: 0;
-}
-
-/* Social media buttons */
-.socialmedia_buttons_footer{
-  width: 100%;
-}
-
-.socialmedia_buttons_footer ul{
-  display: flex;
-  justify-content: flex-start;
-  list-style-type: none;
-  align-items: center;
-  margin-left: 2em;
-}
-
-.socialmedia_buttons_footer img{
-  width: 30%;
-}
-
-
-/* Links onderaan de page */
-.external_links a{
-  text-decoration-line: none;
-}
-
-
-/* Grijs copyright balkje onderaan */
-.copyright_balkje_onderin_footer{
-  background-color: var(--color-underline-grijs);
-  width: 100%;
-  padding: .2em;
-  display: flex;
-  justify-content: center;
-}
-
-.copyright_balkje_onderin_footer :first-of-type{
-  color: black;
-  text-decoration: none;
-  margin: .5em;
-}
 
 
 /*********************************************************************************/

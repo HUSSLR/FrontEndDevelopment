@@ -588,11 +588,12 @@ footer hr{
   justify-content: flex-start;
   list-style-type: none;
   align-items: center;
-  margin-left: 2em;
+  margin-left: 3em;
 }
 
 .socialmedia_buttons_footer img{
-  width: 30%;
+  width: 1em;
+  margin: 2em;
 }
 
 

@@ -359,7 +359,7 @@ figcaption{
 .search_form input[type="search"]{
   width: 93%;
   padding-left: 3em;
-  background-image: url('file:///Users/olafhusslage/Desktop/basiswebsite/images/search.png');
+  background-image: url('file:///Users/olafhusslage/Desktop/CMD%20J1/Jaar%202%20CMD/Blok%201%20-%20WEB/Frontend%20development/basiswebsite/images/search.png');
   background-repeat: no-repeat;
   background-size: 1.25em auto;
   background-position: .75em center;
@@ -367,7 +367,7 @@ figcaption{
 
 .search_form input[type="search"]:placeholder-shown{
   /* Als de zoekbox leeg is - dan een lichtere loop */
-  background-image:url("file:///Users/olafhusslage/Desktop/basiswebsite/images/search.png");
+  background-image:url("file:///Users/olafhusslage/Desktop/CMD%20J1/Jaar%202%20CMD/Blok%201%20-%20WEB/Frontend%20development/basiswebsite/images/search.png");
 }
 
 /* De reset knop */
@@ -378,7 +378,7 @@ figcaption{
   width: 1em; 
   height: 1em;
   right: .75em;
-  background-image: url("file:///Users/olafhusslage/Desktop/basiswebsite/images/remove_text_form.png");
+  background-image: url('file:///Users/olafhusslage/Desktop/CMD%20J1/Jaar%202%20CMD/Blok%201%20-%20WEB/Frontend%20development/basiswebsite/images/remove_text_form.png');
   background-repeat: no-repeat;
   background-size: 1em auto;
   background-position: center center;
@@ -483,14 +483,14 @@ figcaption{
 .blijf_in_contact input[type="email"]{
   width: 93%;
   padding-left: 3em;
-  background-image: url('file:///Users/olafhusslage/Desktop/basiswebsite/images/email.png');
+  background-image: url('file:///Users/olafhusslage/Desktop/CMD%20J1/Jaar%202%20CMD/Blok%201%20-%20WEB/Frontend%20development/basiswebsite/images/email.png');
   background-repeat: no-repeat;
   background-size: 1.25em auto;
   background-position: .75em center;
 }
 
 .blijf_in_contact input[type="email"]:placeholder-shown{
-  background-image: url("file:///Users/olafhusslage/Desktop/basiswebsite/images/email.png");
+  background-image: url('file:///Users/olafhusslage/Desktop/CMD%20J1/Jaar%202%20CMD/Blok%201%20-%20WEB/Frontend%20development/basiswebsite/images/email.png');
 }
 
 /* De reset knop */
@@ -501,7 +501,7 @@ figcaption{
   width: 1em; 
   height: 1em;
   right: .75em;
-  background-image: url("file:///Users/olafhusslage/Desktop/basiswebsite/images/remove_text_form.png");
+  background-image: url('file:///Users/olafhusslage/Desktop/CMD%20J1/Jaar%202%20CMD/Blok%201%20-%20WEB/Frontend%20development/basiswebsite/images/remove_text_form.png');
   background-repeat: no-repeat;
   background-size: 1em auto;
   background-position: center center;

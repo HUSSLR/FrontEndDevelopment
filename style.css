@@ -581,6 +581,7 @@ footer hr{
 /* Social media buttons */
 .socialmedia_buttons_footer{
   margin-left: 1em;
+  width: 100%;
 }
 
 .socialmedia_buttons_footer ul{

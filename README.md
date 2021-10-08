@@ -62,10 +62,7 @@ Ik heb besloten een aantal producten van deze pagina te schrappen, omdat dit sim
 <img src="images/breakdown2.png" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/dynamisch_deel.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="images/dynamisch_deel.png" width="375px" alt="breakdown van een dynamisch deel">
 
 </details>
 
@@ -100,8 +97,6 @@ Maandag: met robert afgesproken dat alle headings binnen articles een h3 zijn en
 <details>
 
 ### Stand van zaken
-Hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
 Wat niet goed ging was dat mijn grid template voor een paar afbeeldingen op de homepage niet goed werkte, waardoor deze afbeeldingen niet geplaatst werden zoals ik wil. Het ging hier om 3 afbeeldingen, waarbij er op de eerste rij 1 afbeelding moest komen en op de 2e rij 2 afbeeldingen. Door zelf te proberen ben ik erachter gekomen dat het lag aan dat de width per afbeelding op 100% moest staan. Dit heb ik gedaan en de afbeeldingen postioneerden zoals ik het wilde. 
 
 Hier stond het verkeerd:
@@ -171,6 +166,8 @@ Dit is wellicht op te lossen door voice control toe te passen in je site.
 - Images worden niet genoemd (moet ik echt fixen, anders loopt mn andere page echt in de soep.
 
 Ik ga al deze feedback verwerken.
+
+Update: alle feedback is verwerkt
 </details>
 
 
@@ -184,7 +181,7 @@ Ik ga al deze feedback verwerken.
 Alles gaat eigenlijk volgens plan en ik ben lekker op schema. Het enige wat me niet lukt is de header sticky maken..
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
+Uitkomsten van de meeting:
 
 - Iets meer pseudo classes gebruiken, classes vooral voor Java gebruiken (maar ik wil juist classes voor sections om het overzicht voor mezelf te bewaren)
 - #'s in href toevoegen.
@@ -261,7 +258,7 @@ Hier de screenshots van mijn site, gemaakt met iPhone 12:
 
 <img src="images/homescreen.png" width="375px" alt="homescreen">
 
-<img src="images/protein-page.png" width="375px" alt="protein-page">
+<img src="images/proteine-page.png" width="375px" alt="protein-page">
 
 </details>
 

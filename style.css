@@ -241,6 +241,7 @@ figcaption{
   margin: 1em;
   text-decoration-line: none;
   color: var(--text-color-zwart-form);
+  list-style-type: none;
 }
 
 .menu a:first-of-type{
@@ -248,9 +249,14 @@ figcaption{
   display: flex;
   flex-direction: column;
   margin: 1em;
-  margin-top: 0em;
   text-decoration-line: none;
-  color: var(--text-color-rood);
+  color: var(--a-color-rood);
+  list-style-type: none;
+}
+
+.menu a:focus{
+  color: var(--state-text-color);
+  background-color: var(--state-button-color);
 }
 
 .menu hr{
@@ -260,11 +266,6 @@ figcaption{
   padding: 0;
   margin-bottom: 0;
   margin-top: 0;
-}
-
-.menu a:focus{
-  color: var(--state-text-color);
-  background-color: var(--state-button-color);
 }
 
 /* De button voor het sluiten van de winkelmand */
@@ -281,7 +282,6 @@ figcaption{
 .menu.Uitgeklapt{
   transform:translateX(0%);
 }
-
 
 /* Winkelmandje en toebehoren */
 /* De img van de winkelmand */
@@ -359,7 +359,7 @@ figcaption{
 .search_form input[type="search"]{
   width: 93%;
   padding-left: 3em;
-  background-image: url('file:///Users/olafhusslage/Desktop/CMD%20J1/Jaar%202%20CMD/Blok%201%20-%20WEB/Frontend%20development/basiswebsite/images/search.png');
+  background-image: url('../images/search.png');
   background-repeat: no-repeat;
   background-size: 1.25em auto;
   background-position: .75em center;
@@ -367,7 +367,7 @@ figcaption{
 
 .search_form input[type="search"]:placeholder-shown{
   /* Als de zoekbox leeg is - dan een lichtere loop */
-  background-image:url("file:///Users/olafhusslage/Desktop/CMD%20J1/Jaar%202%20CMD/Blok%201%20-%20WEB/Frontend%20development/basiswebsite/images/search.png");
+  background-image:url("../images/search.png");
 }
 
 /* De reset knop */
@@ -378,7 +378,7 @@ figcaption{
   width: 1em; 
   height: 1em;
   right: .75em;
-  background-image: url('file:///Users/olafhusslage/Desktop/CMD%20J1/Jaar%202%20CMD/Blok%201%20-%20WEB/Frontend%20development/basiswebsite/images/remove_text_form.png');
+  background-image: url('../images/remove_text_form.png');
   background-repeat: no-repeat;
   background-size: 1em auto;
   background-position: center center;
@@ -462,14 +462,15 @@ figcaption{
 /* Styling voor input van het contact-form */
 .blijf_in_contact input{
   font-family: 'BulkSans_SemiBold';
-  max-width: 30em;
+  max-width: 40em;
   line-height: 3em;
   margin-bottom: 3em;
-  padding: 0 1em;
+  padding: 0 3em;
   color:var(--input-color);
   background-color: var(--form-color);
   border: none;
   border-radius: .2em;
+  margin-right: 0;
   /* Om het standaard randje bij focus niet te tonen */
   outline: none;
   /* Nodig voor telefoons */
@@ -478,30 +479,31 @@ figcaption{
 
 .blijf_in_contact input::placeholder{
   color: var(--text-color-zwart-form);
+  background-image: url('../images/email.png');
 }
 
 .blijf_in_contact input[type="email"]{
   width: 93%;
   padding-left: 3em;
-  background-image: url('file:///Users/olafhusslage/Desktop/CMD%20J1/Jaar%202%20CMD/Blok%201%20-%20WEB/Frontend%20development/basiswebsite/images/email.png');
+  background-image: url('../images/email.png');
   background-repeat: no-repeat;
   background-size: 1.25em auto;
   background-position: .75em center;
 }
 
 .blijf_in_contact input[type="email"]:placeholder-shown{
-  background-image: url('file:///Users/olafhusslage/Desktop/CMD%20J1/Jaar%202%20CMD/Blok%201%20-%20WEB/Frontend%20development/basiswebsite/images/email.png');
+  background-image: url('../images/email.png');
 }
 
 /* De reset knop */
-.blijf_in_contact input::-webkit-search-cancel-button{
-  /* Ander soort kruisje */
+.blijf_in_contact::-webkit-search-cancel-button{
+  /* Andere soort x */
   appearance: none;
   position: absolute;
   width: 1em; 
   height: 1em;
-  right: .75em;
-  background-image: url('file:///Users/olafhusslage/Desktop/CMD%20J1/Jaar%202%20CMD/Blok%201%20-%20WEB/Frontend%20development/basiswebsite/images/remove_text_form.png');
+  right: 1em;
+  background-image: url('../images/remove_text_form.png');
   background-repeat: no-repeat;
   background-size: 1em auto;
   background-position: center center;

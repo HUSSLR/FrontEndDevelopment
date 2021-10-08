@@ -105,10 +105,10 @@ Hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 Wat niet goed ging was dat mijn grid template voor een paar afbeeldingen op de homepage niet goed werkte, waardoor deze afbeeldingen niet geplaatst werden zoals ik wil. Het ging hier om 3 afbeeldingen, waarbij er op de eerste rij 1 afbeelding moest komen en op de 2e rij 2 afbeeldingen. Door zelf te proberen ben ik erachter gekomen dat het lag aan dat de width per afbeelding op 100% moest staan. Dit heb ik gedaan en de afbeeldingen postioneerden zoals ik het wilde. 
 
 Hier stond het verkeerd:
-<img src="images/verkeerde_positionering_grid" width="375px" alt="grid werkte niet">
+<img src="images/verkeerde_positionering_grid.png" width="375px" alt="grid werkte niet">
 
 Nu staat het zo (door bij inspecteren te kijken naar de vakken in de grid template en hoe daar een afbeelding in past):
-<img src="images/goede_positionering_grid" width="375px" alt="grid werkt wel">
+<img src="images/goede_positionering_grid.png" width="375px" alt="grid werkt wel">
 
 Ik heb goede code geschreven en kan verder met transities voor mijn menu's.
 
@@ -199,6 +199,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <details>
 6-10: mijn CSS tussentijds gevalideerd en kreeg alleen 4 waarschuwingen. Geen errors:
 
+
 <img src="images/css_validatie_1.png" width="375px" alt="css validatie">
 
 6-10: mijn JS tussentijds gevalideerd en kreeg alleen 2 errors: missing semicolon. Het ging hier slechts om 2 console-logs:
@@ -221,15 +222,13 @@ Ook stond er een figcaption binnen een atricle en dit mag je alleen gebruiken bi
 Alle errors heb ik verwerkt en de waarschuwingen heb ik ook gecontroleerd.
 
 
-
-
 Ik ben ook verder gegaan met mijn 2e page. Hier ben ik bezig met buttons naar de volgende pagina's met resultaten.
 
 Begonnen met een grid-template:
 <img src="images/grid_buttons.png" width="375px" alt="grid voor buttons">
 
 Resultaat van mijn buttons:
-<img src="images/resultaat_buttons.2.png" width="375px" alt="resultaat voor buttons">
+<img src="images/resultaat_buttons.png" width="375px" alt="resultaat voor buttons">
 
 </details>
 
@@ -237,14 +236,32 @@ Resultaat van mijn buttons:
 ## Eindgesprek (week 5)
 
 <details>
-<summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+Dit waren de laatste dingen die ik nog wilde doen voor het eindgesprek:
+
+- [x] Read.me doornemen en dingen toevoegen (makkelijk)
+- [x] E-mail veld mooi stylen (makkelijk)
+- [x] Video toevoegen (hier had ik moeite mee, maar dat kwam omdat ik hem niet op de juiste manier exporteerde)
+- [x] Menu en winkelmand meer stylen (makkelijk)
+- [x] Focus state toevoegen aan 2e page (makkelijk)
+- [x] Sorteren toevoegen (wist niet hoe, Han heeft het me geleerd)
+- [x] Nieuwe producten toevoegen aan protein-page (makkelijk)
+- [x] Css correct neerzetten, specifiek en niet specifiek. Van boven naar beneden (makkelijk)
+- [x] HTML notities controleren en toevoegen - zo gedaan
+- [x] Css valideren - was perfect
+- [x] HTML valideren - kleine aanpassingen gedaan
+- [x] JS valideren - was perfect
+
 
 ### Screenshot(s)
 
-hier screenshot(s) van je eindresultaat
+Hier de screenshots van mijn site, gemaakt met iPhone 12:
+
+<img src="images/homescreen.png" width="375px" alt="homescreen">
+
+<img src="images/protein-page.png" width="375px" alt="protein-page">
 
 </details>
 
@@ -274,6 +291,5 @@ hier screenshot(s) van je eindresultaat
 17. https://codepen.io/robertspier/pen/YzQgGbZ?editors=1100 (voor een sliding tranisitie onder mijn search form)
 18. https://www.geeksforgeeks.org/how-to-insert-video-in-web-page-and-play-it-using-html/ (voor toevoegen van de video op mijn proteïn page)
 19. https://extract.pics/ (voor het extracten van alle foto's/andere content van de bulk site)
-20. SHOUTOUT NAAR HAN 
 
 </details>

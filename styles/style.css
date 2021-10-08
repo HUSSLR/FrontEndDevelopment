@@ -574,13 +574,13 @@ footer hr{
   width: 100%;
   color: var(--color-lichtgrijs);
   padding: 0;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   margin-top: 0;
 }
 
 /* Social media buttons */
 .socialmedia_buttons_footer{
-  width: 100%;
+  margin-left: 2em;
 }
 
 .socialmedia_buttons_footer ul{
@@ -588,12 +588,12 @@ footer hr{
   justify-content: flex-start;
   list-style-type: none;
   align-items: center;
-  margin-left: 3em;
 }
 
 .socialmedia_buttons_footer img{
   width: 1em;
-  margin: 2em;
+  margin: 1em;
+  margin-top: 1em;
 }
 
 

@@ -241,6 +241,7 @@ figcaption{
   margin: 1em;
   text-decoration-line: none;
   color: var(--text-color-zwart-form);
+  list-style-type: none;
 }
 
 .menu a:first-of-type{
@@ -248,9 +249,14 @@ figcaption{
   display: flex;
   flex-direction: column;
   margin: 1em;
-  margin-top: 0em;
   text-decoration-line: none;
-  color: var(--text-color-rood);
+  color: var(--a-color-rood);
+  list-style-type: none;
+}
+
+.menu a:focus{
+  color: var(--state-text-color);
+  background-color: var(--state-button-color);
 }
 
 .menu hr{
@@ -260,11 +266,6 @@ figcaption{
   padding: 0;
   margin-bottom: 0;
   margin-top: 0;
-}
-
-.menu a:focus{
-  color: var(--state-text-color);
-  background-color: var(--state-button-color);
 }
 
 /* De button voor het sluiten van de winkelmand */
@@ -281,7 +282,6 @@ figcaption{
 .menu.Uitgeklapt{
   transform:translateX(0%);
 }
-
 
 /* Winkelmandje en toebehoren */
 /* De img van de winkelmand */
@@ -359,7 +359,7 @@ figcaption{
 .search_form input[type="search"]{
   width: 93%;
   padding-left: 3em;
-  background-image: url('file:///Users/olafhusslage/Desktop/basiswebsite/images/search.png');
+  background-image: url('../images/search.png');
   background-repeat: no-repeat;
   background-size: 1.25em auto;
   background-position: .75em center;
@@ -367,7 +367,7 @@ figcaption{
 
 .search_form input[type="search"]:placeholder-shown{
   /* Als de zoekbox leeg is - dan een lichtere loop */
-  background-image:url("file:///Users/olafhusslage/Desktop/basiswebsite/images/search.png");
+  background-image:url("../images/search.png");
 }
 
 /* De reset knop */
@@ -378,7 +378,7 @@ figcaption{
   width: 1em; 
   height: 1em;
   right: .75em;
-  background-image: url("file:///Users/olafhusslage/Desktop/basiswebsite/images/remove_text_form.png");
+  background-image: url('../images/remove_text_form.png');
   background-repeat: no-repeat;
   background-size: 1em auto;
   background-position: center center;
@@ -436,6 +436,131 @@ figcaption{
 	66% {
 		transform: translateX(-200%);
 	}
+}
+
+
+
+/********/
+/* MAIN */
+/********/
+
+/* Contact form en a */
+.blijf_in_contact{
+  align-items: center;
+  text-align: center;
+  padding-top: 0.1em;
+  padding-bottom: 3em;
+  background-color: var(--background-color-contact-tile);
+}
+
+.blijf_in_contact h2{
+  margin-top: 2em;
+  margin-left: 1em;
+  text-align: center;
+}
+
+/* Styling voor input van het contact-form */
+.blijf_in_contact input{
+  font-family: 'BulkSans_SemiBold';
+  max-width: 40em;
+  line-height: 3em;
+  margin-bottom: 3em;
+  padding: 0 3em;
+  color:var(--input-color);
+  background-color: var(--form-color);
+  border: none;
+  border-radius: .2em;
+  margin-right: 0;
+  /* Om het standaard randje bij focus niet te tonen */
+  outline: none;
+  /* Nodig voor telefoons */
+  appearance: none;
+}
+
+.blijf_in_contact input::placeholder{
+  color: var(--text-color-zwart-form);
+  background-image: url('../images/email.png');
+}
+
+.blijf_in_contact input[type="email"]{
+  width: 93%;
+  padding-left: 3em;
+  background-image: url('../images/email.png');
+  background-repeat: no-repeat;
+  background-size: 1.25em auto;
+  background-position: .75em center;
+}
+
+.blijf_in_contact input[type="email"]:placeholder-shown{
+  background-image: url('../images/email.png');
+}
+
+/* De reset knop */
+.blijf_in_contact::-webkit-search-cancel-button{
+  /* Andere soort x */
+  appearance: none;
+  position: absolute;
+  width: 1em; 
+  height: 1em;
+  right: 1em;
+  background-image: url('../images/remove_text_form.png');
+  background-repeat: no-repeat;
+  background-size: 1em auto;
+  background-position: center center;
+}
+
+/* Styling voor a van het contact-form */
+.blijf_in_contact a{
+  font-family: 'BulkSans_Bold';
+  font-size: .8em;
+  text-decoration-line: none;
+  width: 33%;
+  padding: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  color: var(--text-color-button-contact-form);
+  border: none;
+  border-radius: 3em;
+  background-color: var(--a-color-zwart);
+}
+
+.blijf_in_contact a:focus{
+  color: var(--state-text-color);
+  background-color: var(--state-button-color);
+}
+
+
+/* Tekstsection onder het contact form */
+.tekstsection_onder_contact_form{
+  margin-bottom: 3em;
+}
+
+.tekstsection_onder_contact_form article{
+  margin-top: 4em;
+}
+
+.tekstsection_onder_contact_form article:first-of-type{
+  margin-top: 2em;
+}
+
+.tekstsection_onder_contact_form a{
+  font-family: 'BulkSans_Bold';
+  font-size: .8em;
+  padding: 1em;
+  margin-bottom: 8em;
+  margin-left: 10%;;
+  text-decoration-line: none;
+  width: 33%;
+  color: var(--a-color-zwart);
+  border-radius: 3em;
+  text-align: center;  
+  border: 2px solid var(--a-color-zwart);
+  background-color: var(--a-color-wit-button-onder-contactform);
+}
+
+.tekstsection_onder_contact_form a:focus{
+  color: var(--state-text-color);
+  background-color: var(--state-button-color);
 }
 
 
@@ -761,125 +886,6 @@ div figcaption p{
   width: 100%;
   margin-bottom: 3em;
 }
-
-
-/* Contact form en a */
-.blijf_in_contact{
-  align-items: center;
-  text-align: center;
-  padding-top: 0.1em;
-  padding-bottom: 3em;
-  background-color: var(--background-color-contact-tile);
-}
-
-.blijf_in_contact h2{
-  margin-top: 2em;
-  margin-left: 1em;
-  text-align: center;
-}
-
-/* Styling voor input van het contact-form */
-.blijf_in_contact input{
-  font-family: 'BulkSans_SemiBold';
-  max-width: 30em;
-  line-height: 3em;
-  margin-bottom: 3em;
-  padding: 0 1em;
-  color:var(--input-color);
-  background-color: var(--form-color);
-  border: none;
-  border-radius: .2em;
-  /* Om het standaard randje bij focus niet te tonen */
-  outline: none;
-  /* Nodig voor telefoons */
-  appearance: none;
-}
-
-.blijf_in_contact input::placeholder{
-  color: var(--text-color-zwart-form);
-}
-
-.blijf_in_contact input[type="email"]{
-  width: 93%;
-  padding-left: 3em;
-  background-image: url('file:///Users/olafhusslage/Desktop/basiswebsite/images/email.png');
-  background-repeat: no-repeat;
-  background-size: 1.25em auto;
-  background-position: .75em center;
-}
-
-.blijf_in_contact input[type="email"]:placeholder-shown{
-  background-image: url("file:///Users/olafhusslage/Desktop/basiswebsite/images/email.png");
-}
-
-/* De reset knop */
-.blijf_in_contact input::-webkit-search-cancel-button{
-  /* Ander soort kruisje */
-  appearance: none;
-  position: absolute;
-  width: 1em; 
-  height: 1em;
-  right: .75em;
-  background-image: url("file:///Users/olafhusslage/Desktop/basiswebsite/images/remove_text_form.png");
-  background-repeat: no-repeat;
-  background-size: 1em auto;
-  background-position: center center;
-}
-
-/* Styling voor a van het contact-form */
-.blijf_in_contact a{
-  font-family: 'BulkSans_Bold';
-  font-size: .8em;
-  text-decoration-line: none;
-  width: 33%;
-  padding: 1em;
-  padding-left: 2em;
-  padding-right: 2em;
-  color: var(--text-color-button-contact-form);
-  border: none;
-  border-radius: 3em;
-  background-color: var(--a-color-zwart);
-}
-
-.blijf_in_contact a:focus{
-  color: var(--state-text-color);
-  background-color: var(--state-button-color);
-}
-
-
-/* Tekstsection onder het contact form */
-.tekstsection_onder_contact_form{
-  margin-bottom: 3em;
-}
-
-.tekstsection_onder_contact_form article{
-  margin-top: 4em;
-}
-
-.tekstsection_onder_contact_form article:first-of-type{
-  margin-top: 2em;
-}
-
-.tekstsection_onder_contact_form a{
-  font-family: 'BulkSans_Bold';
-  font-size: .8em;
-  padding: 1em;
-  margin-bottom: 8em;
-  margin-left: 10%;;
-  text-decoration-line: none;
-  width: 33%;
-  color: var(--a-color-zwart);
-  border-radius: 3em;
-  text-align: center;  
-  border: 2px solid var(--a-color-zwart);
-  background-color: var(--a-color-wit-button-onder-contactform);
-}
-
-.tekstsection_onder_contact_form a:focus{
-  color: var(--state-text-color);
-  background-color: var(--state-button-color);
-}
-
 
 
 /*********************************************************************************/
